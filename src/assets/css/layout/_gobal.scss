@@ -1,0 +1,63 @@
+@import "./variable";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: $font-gobal;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "GRIFTER";
+  font-weight: 700;
+}
+.container-div {
+  width: 1920px;
+  margin: auto;
+  background: #000;
+}
+
+.link-gap {
+  gap: 50px;
+}
+.header-title {
+  margin-top: 96px;
+}
+.header-btn {
+  color: #000;
+  transition: 0.5s;
+  padding: 20px 25px;
+  background: #ffc01d;
+  text-decoration: none;
+  font-family: "GRIFTER", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) -8px 6px 0px 0px;
+  }
+  svg {
+    margin-left: 10px;
+  }
+}
+.marging {
+  margin: auto 312px;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.swiper-cntainer {
+  margin-top: 120px;
+}

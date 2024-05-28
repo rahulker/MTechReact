@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'GRIFTER';
+    src: url('GRIFTERBold.eot');
+    src: url('GRIFTERBold.eot?#iefix') format('embedded-opentype'),
+        url('GRIFTERBold.woff2') format('woff2'),
+        url('GRIFTERBold.woff') format('woff'),
+        url('GRIFTERBold.ttf') format('truetype'),
+        url('GRIFTERBold.svg#GRIFTERBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
