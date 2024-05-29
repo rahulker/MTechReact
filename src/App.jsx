@@ -14,24 +14,20 @@ const App = () => {
       path: "/",
       element: (
         <div>
-          <div className="marging">
-            <Navbar />
-          </div>
           <Home />
         </div>
       ),
     },
     {
-      path: "/contact-us",
+      path: "/about-us",
       element: (
-        <div className="marging">
-          <Navbar />
+        <div>
           <AboutUs />
         </div>
       ),
     },
     {
-      path: "/about-us",
+      path: "/contact-us",
       element: (
         <div className="marging">
           <Navbar />
@@ -42,8 +38,7 @@ const App = () => {
     {
       path: "/Blog",
       element: (
-        <div className="marging">
-          <Navbar />
+        <div>
           <Blog />
         </div>
       ),
