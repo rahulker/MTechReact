@@ -187,3 +187,47 @@ footer {
     width: 321px;
   }
 }
+
+.watch-contemt {
+  h3 {
+    font-family: "Roboto";
+    font-size: 34px;
+    line-height: 46px;
+  }
+  div {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+.border-para {
+  border: 1px solid black;
+  width: 35px;
+}
+
+.new-content {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.blog-heading {
+  width: 1075px;
+  h1 {
+    font-family: "Roboto";
+    font-size: 60px;
+    line-height: 76px;
+  }
+}
+
+.blog-data,
+.blog-details {
+  width: 1075px;
+  h2 {
+    font-family: "Roboto";
+  }
+  font-size: 18px;
+  line-height: 32px;
+  p {
+    margin-top: 30px;
+  }
+}

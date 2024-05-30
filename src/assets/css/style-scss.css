@@ -208,4 +208,82 @@ footer h3 {
 }
 .footer-address p {
   width: 321px;
+}
+
+.watch-contemt h3 {
+  font-family: "Roboto";
+  font-size: 34px;
+  line-height: 46px;
+}
+.watch-contemt div {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.border-para {
+  border: 1px solid black;
+  width: 35px;
+}
+
+.new-content {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.blog-heading {
+  width: 1075px;
+}
+.blog-heading h1 {
+  font-family: "Roboto";
+  font-size: 60px;
+  line-height: 76px;
+}
+
+.blog-data,
+.blog-details {
+  width: 1075px;
+  font-size: 18px;
+  line-height: 32px;
+}
+.blog-data h2,
+.blog-details h2 {
+  font-family: "Roboto";
+}
+.blog-data p,
+.blog-details p {
+  margin-top: 30px;
+}
+
+.blog-btn {
+  font-family: "Roboto";
+}
+
+.paginationData h3 {
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.pagination-pre {
+  padding: 5px 30px;
+}
+
+.company-swiper {
+  padding: 40px 0;
+  background: #f7f7f7;
+}
+
+.card-para {
+  font-size: 22px;
+  line-height: 40px;
+  width: 500px;
+}
+
+.card-info {
+  padding: 48px 55px;
+  background: #f7f7f7;
+}
+
+.card-info {
+  font-size: 17px;
+  line-height: 30px;
 }/*# sourceMappingURL=style-scss.css.map */

@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 function BannerSection() {
   return (
     <section className="mt-32 banner">
@@ -9,10 +10,10 @@ function BannerSection() {
           For over a decade, our team has tackled challenging projects across a
           wide variety of verticals. Here are just a few examples:
         </p>
-        <button className={`header-btn `}>
+        <NavLink to="/contact-us" className={`header-btn `}>
           Get Started
           <FontAwesomeIcon icon={faArrowRight} />
-        </button>
+        </NavLink>
       </div>
     </section>
   );

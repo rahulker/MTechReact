@@ -1,4 +1,5 @@
 // import React from "react";
+import BlogDetails from "./screens/BlogDetails";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./screens/Home";
 import AboutUs from "./screens/AboutUs";
@@ -29,8 +30,7 @@ const App = () => {
     {
       path: "/contact-us",
       element: (
-        <div className="marging">
-          <Navbar />
+        <div>
           <ContactUs />
         </div>
       ),
@@ -49,6 +49,14 @@ const App = () => {
         <div className="marging">
           <Navbar />
           <Product />
+        </div>
+      ),
+    },
+    {
+      path: "//Blog-details",
+      element: (
+        <div>
+          <BlogDetails />
         </div>
       ),
     },

@@ -22,4 +22,12 @@ export default {
   CONSUMER: require("../assets/image/Industry-icon/Consumer.svg"),
   HEXANDON: require("../assets/image/Industry-icon/hexandon.svg"),
   MEDIC: require("../assets/image/Industry-icon/medic.svg"),
+  FITNESSWATCH: require("../assets/image/product-img-blog/fitness-watch.png"),
+  FARMASY: require("../assets/image/product-img-blog/farmasy.png"),
+  CARPARKING: require("../assets/image/product-img-blog/car-parking.png"),
+  FITNESSWATCHNEW: require("../assets/image/fitness-watch-cover.png"),
+  FITNESSWATCHZOOM: require("../assets/image/fitness-watch-2.png"),
+  LOCATION: require("../assets/image/contact-detail-icon/location.svg"),
+  PLANE: require("../assets/image/contact-detail-icon/plane.svg"),
+  PHONE: require("../assets/image/contact-detail-icon/phone.svg"),
 };
