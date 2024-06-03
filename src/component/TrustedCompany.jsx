@@ -7,17 +7,32 @@ import "swiper/css";
 swiperCore.use([Navigation, Autoplay]);
 const TrustedCompany = ({ ParaContent, Header, HiddenPara }) => {
   return (
-    <div className="grid grid-cols-4 items-center">
+    <div className="grid xl:grid-cols-4 items-center grid-cols-1">
       <div>
         <p className={`${HiddenPara} trusted-para`}>{ParaContent}</p>
         <h2>{Header}</h2>
       </div>
       <div className="col-span-3">
         <Swiper
-          slidesPerView={6}
+          slidesPerView={2}
+          spaceBetween={10}
           autoplay={{ delay: 1500 }}
           loop
           className="text-white"
+          breakpoints={{
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 25,
+            },
+            1280: {
+              slidesPerView: 6,
+              spaceBetween: 30,
+            },
+          }}
         >
           <SwiperSlide>
             <img src={ImagePath.AMD} alt="Watch in Hand" />

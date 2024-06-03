@@ -54,4 +54,11 @@ export default {
   POPULATION: require("../assets/image/problem/population.png"),
   PARKINGHABITS: require("../assets/image/problem/parking-habits.png"),
   NONPROPER: require("../assets/image/problem/non-proper-manag.png"),
+  PARKINGMACHINE: require("../assets/image/hardware.svg"),
+  PARKINGAPP: require("../assets/image/software.svg"),
+  WORKFLOW: require("../assets/image/workflow.svg"),
+  TARGETEDCUSTOMER: require("../assets/image/casult.svg"),
+  FITNESSPRODUCT: require("../assets/image/more-product/fitness-more-product.png"),
+  CARKPRODUCT: require("../assets/image/more-product/car-parking-more.png"),
+  SYSTEMPRODUCT: require("../assets/image/more-product/set-up-more.png"),
 };

@@ -9,10 +9,15 @@ import PropTypes from "prop-types";
 
 const SwiperContentSlide = ({ Content, Image }) => {
   return (
-    <div className="grid grid-cols-3 ">
-      <div className="container-content col-span-2">
+    <div className="grid lg:grid-cols-3 grid-cols-1 ">
+      <img
+        src={ImagePath.CARPARK}
+        alt="cark park in parking"
+        className="w-full lg:hidden block"
+      />
+      <div className="container-content col-span-2 mt-2.5 lg:mt-0">
         <h2>{Content}</h2>
-        <div className="flex items-center user-details gap-4">
+        <div className="flex items-center user-details sm:gap-4 gap-2">
           <img src={Image} alt="user" />
           <p>
             Ovi Tisler, <span> Director of Engineering, Grubhub</span>
@@ -22,7 +27,7 @@ const SwiperContentSlide = ({ Content, Image }) => {
       <img
         src={ImagePath.CARPARK}
         alt="cark park in parking"
-        className="w-full"
+        className="w-full hidden lg:block"
       />
     </div>
   );
@@ -60,7 +65,7 @@ function SwiperReview() {
         {/* 2 */}
         <SwiperSlide>
           <SwiperContentSlide
-            Content="We got a Glide app out to a few hundred drivers with literally two hours of effort. Building this in our native app would've taken weeks."
+            Content="Lorem ipsum dolor sit amet consectetur adipisicing elit.Consequuntur, earum dolores fugit nesciunt deserunt autemcorporis officiis pariatur veniam eveniet!"
             Image={ImagePath.USER2}
           />
         </SwiperSlide>
@@ -74,42 +79,33 @@ function SwiperReview() {
         {/* 1 */}
         <SwiperSlide>
           <SwiperContentSlide
-            Content="Lorem ipsum dolor sit amet consectetur adipisicing elit.Consequuntur, earum dolores fugit nesciunt deserunt autemcorporis officiis pariatur veniam eveniet!"
+            Content="
+                    “We got a Glide app out to a few hundred drivers with
+                    literally two hours of effort. Building this in our native
+                    app would’ve taken weeks.”
+                  "
             Image={ImagePath.USER1}
           />
         </SwiperSlide>
         {/* 2 */}
         <SwiperSlide>
           <SwiperContentSlide
-            Content="We got a Glide app out to a few hundred drivers with literally two hours of effort. Building this in our native app would've taken weeks."
+            Content="
+                    “We got a Glide app out to a few hundred drivers with
+                    literally two hours of effort. Building this in our native
+                    app would’ve taken weeks.”
+                  "
             Image={ImagePath.USER2}
           />
         </SwiperSlide>
         {/* 3 */}
         <SwiperSlide>
           <SwiperContentSlide
-            Content="Lorem ipsum dolor sit amet consectetur adipisicing elit.Consequuntur, earum dolores fugit nesciunt deserunt autemcorporis officiis pariatur veniam eveniet!"
-            Image={ImagePath.USER3}
-          />
-        </SwiperSlide>
-        {/* 1 */}
-        <SwiperSlide>
-          <SwiperContentSlide
-            Content="Lorem ipsum dolor sit amet consectetur adipisicing elit.Consequuntur, earum dolores fugit nesciunt deserunt autemcorporis officiis pariatur veniam eveniet!"
-            Image={ImagePath.USER1}
-          />
-        </SwiperSlide>
-        {/* 2 */}
-        <SwiperSlide>
-          <SwiperContentSlide
-            Content="We got a Glide app out to a few hundred drivers with literally two hours of effort. Building this in our native app would've taken weeks."
-            Image={ImagePath.USER2}
-          />
-        </SwiperSlide>
-        {/* 3 */}
-        <SwiperSlide>
-          <SwiperContentSlide
-            Content="Lorem ipsum dolor sit amet consectetur adipisicing elit.Consequuntur, earum dolores fugit nesciunt deserunt autemcorporis officiis pariatur veniam eveniet!"
+            Content="
+                    “We got a Glide app out to a few hundred drivers with
+                    literally two hours of effort. Building this in our native
+                    app would’ve taken weeks.”
+                  "
             Image={ImagePath.USER3}
           />
         </SwiperSlide>

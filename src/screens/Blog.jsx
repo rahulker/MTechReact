@@ -40,21 +40,23 @@ const Blog = () => {
 
   return (
     <>
-      <header className="bg-black pb-44">
+      <header className="bg-black 2xl:pb-44 pb-10">
         <div className="marging">
           <Navbar />
-          <HeaderTitle
-            h1Title="Blog"
-            headingPara="
+          <div className="mobile-space">
+            <HeaderTitle
+              h1Title="Blog"
+              headingPara="
           Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           "
-            ButtonText="Get Started"
-            buttonShow="hidden"
-          />
+              ButtonText="Get Started"
+              buttonShow="hidden"
+            />
+          </div>
         </div>
       </header>
-      <section className="marging !mt-28">
-        <div className="flex items-center justify-between gap-16">
+      <section className="marging mobile-space xl:!mt-28 !mt-10">
+        <div className="flex flex-col lg:flex-row items-center justify-between lg:gap-16 gap-5">
           <img src={ImagePath.FITNESSWATCH} alt="fitness watch" />
           <div className="watch-contemt">
             <h3>Fitness tracking exceptional product experiences to life.</h3>
@@ -63,7 +65,7 @@ const Blog = () => {
               <p className="border-para"></p>
               <p>February 31, 2023</p>
             </div>
-            <p className="my-5 new-content ">
+            <p className="md:my-5 my-2.5 new-content ">
               Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis
               nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -79,8 +81,8 @@ const Blog = () => {
           </div>
         </div>
       </section>
-      <section className="marging !mt-20">
-        <div className="grid grid-cols-3 justify-evenly gap-6">
+      <section className="marging !mt-20 mobile-space">
+        <div className="grid xl:grid-cols-3 grid-cols-1 justify-evenly gap-6">
           {records.map((d) => {
             return (
               <div key={d.id} className="h-full">

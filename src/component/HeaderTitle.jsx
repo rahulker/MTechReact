@@ -4,7 +4,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const HeaderTitle = ({ h1Title, headingPara, ButtonText, buttonShow }) => {
   return (
-    <div className="header-title grid grid-cols-2 gap-2 items-start text-white">
+    <div className="header-title grid lg:grid-cols-2 grid-cols-1 gap-2 items-start text-white">
       <h1>{h1Title}</h1>
       <div>
         <p>{headingPara}</p>

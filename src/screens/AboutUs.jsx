@@ -12,36 +12,38 @@ import ImagePath from "../constant/ImagePath";
 const AboutUs = () => {
   return (
     <>
-      <header className="bg-black pb-44">
+      <header className="bg-black 2xl:pb-44 pb-10">
         <div className="marging">
           <Navbar />
-          <HeaderTitle
-            h1Title="About Us"
-            headingPara="
+          <div className="mobile-space">
+            <HeaderTitle
+              h1Title="About Us"
+              headingPara="
                 We’re a diverse group of designers, strategists, engineers and
                 wordsmiths who make things people love to use. We help the
                 world’s most progressive brands solve problems, seize
                 opportunities and generate growth.
               "
-            ButtonText="Get Started"
-            buttonShow="hidden"
-          />
+              ButtonText="Get Started"
+              buttonShow="hidden"
+            />
+          </div>
         </div>
       </header>
-      <section className="marging">
+      <section className="marging mobile-space">
         <Meeting />
       </section>
-      <section className="marging !mt-14">
+      <section className="marging lg:!mt-14 !mt-7 mobile-space">
         <TrustedCompany Header="Trusted By" HiddenPara="hidden" />
       </section>
-      <section className="pt-32 marging">
+      <section className="xl:pt-32 lg:pt-20 pt-8 marging mobile-space">
         <Title
           headerContent="Industry Experience"
           paraContent="For over a decade, our team has tackled challenging projects across a wide variety of verticals. Here are just a few examples:"
           headingFont="box-heading"
         />
-        <div className="mt-14 flex items-center gap-6">
-          <div className="grid grid-cols-2 gap-6">
+        <div className="lg:mt-14 md:mt-10 flex flex-col xl:flex-row mt-7 items-center gap-6">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
             <CardBox
               background="white-box"
               spaces="spacing-box"
@@ -86,7 +88,7 @@ const AboutUs = () => {
           <img src={ImagePath.MANWORKING} alt="manworking" />
         </div>
       </section>
-      <section className="marging content-slide">
+      <section className="marging mobile-space content-slide">
         <SwiperReview />
       </section>
       <BannerSection />

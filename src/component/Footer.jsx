@@ -2,10 +2,10 @@ import ImagePath from "../constant/ImagePath";
 import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className="my-20">
-      <div className="grid grid-cols-4 marging justify-between footer-query">
+    <footer className="lg:my-20 my-5">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 marging mobile-space justify-between footer-query">
         {/* 1 */}
-        <div className="col-span-2">
+        <div className="xl:col-span-2 col-auto">
           <img src={ImagePath.LOGO} alt="site logo" />
           <p className="mt-5">
             Glide gives you the powers of a developer and a designer. Create
@@ -18,10 +18,10 @@ const Footer = () => {
           </div>
         </div>
         {/* 2 */}
-        <div className="flex items-start justify-between footer-address col-span-2">
-          <div className="flex flex-col items-center gap-4">
+        <div className="flex items-start flex-col justify-between xl:flex-row footer-address col-span-2 lg:col-auto xl:col-span-2">
+          <div className="flex flex-col lg:items-center  items-start gap-4">
             <h3>Quick Links</h3>
-            <ul className="flex flex-col items-start gap-4">
+            <ul className="flex md:flex-col lg:flex-row xl:flex-col items-start gap-4">
               <li>
                 <NavLink to="/">Home</NavLink>
               </li>

@@ -20,93 +20,120 @@ const Home = () => {
       <header className="bg-black">
         <div className="marging">
           <Navbar />
-          <HeaderTitle
-            h1Title="Build digital product you actually"
-            headingPara="Glide makes it easy to build and deploy custom tools your business needs and team will love — with clicks, not code."
-            ButtonText="Get Started"
-          />
-        </div>
-        <div className="swiper-cntainer pb-16">
-          <Swiper
-            slidesPerView={2.5}
-            spaceBetween={25}
-            autoplay={{ delay: 1500 }}
-            loop
-            className="text-white"
-          >
-            <SwiperSlide>
-              <img
-                src={ImagePath.WATCHINHAND}
-                alt="Watch in Hand"
-                className="w-full"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ImagePath.FARM} alt="farming app" className="w-full" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={ImagePath.PARKING}
-                alt="parking photo"
-                className="w-full"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={ImagePath.WATCHINHAND}
-                alt="Watch in Hand"
-                className="w-full"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ImagePath.FARM} alt="farming app" className="w-full" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={ImagePath.PARKING}
-                alt="parking photo"
-                className="w-full"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={ImagePath.WATCHINHAND}
-                alt="Watch in Hand"
-                className="w-full"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ImagePath.FARM} alt="farming app" className="w-full" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={ImagePath.PARKING}
-                alt="parking photo"
-                className="w-full"
-              />
-            </SwiperSlide>
-          </Swiper>
+          <div className="mx-5 lg:mx-10">
+            <HeaderTitle
+              h1Title="Build digital product you actually"
+              headingPara="Glide makes it easy to build and deploy custom tools your business needs and team will love — with clicks, not code."
+              ButtonText="Get Started"
+            />
+          </div>
+          <div className="swiper-cntainer pb-16">
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={25}
+              autoplay={{ delay: 1500 }}
+              loop
+              className="text-white"
+              breakpoints={{
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                1280: {
+                  slidesPerView: 3,
+                },
+              }}
+            >
+              <SwiperSlide>
+                <img
+                  src={ImagePath.WATCHINHAND}
+                  alt="Watch in Hand"
+                  className="w-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={ImagePath.FARM}
+                  alt="farming app"
+                  className="w-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={ImagePath.PARKING}
+                  alt="parking photo"
+                  className="w-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={ImagePath.WATCHINHAND}
+                  alt="Watch in Hand"
+                  className="w-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={ImagePath.FARM}
+                  alt="farming app"
+                  className="w-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={ImagePath.PARKING}
+                  alt="parking photo"
+                  className="w-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={ImagePath.WATCHINHAND}
+                  alt="Watch in Hand"
+                  className="w-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={ImagePath.FARM}
+                  alt="farming app"
+                  className="w-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={ImagePath.PARKING}
+                  alt="parking photo"
+                  className="w-full"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </header>
-      <section className=" bg-white marging">
+      <section className=" bg-white  marging mobile-space">
         <TrustedCompany
           HiddenPara="block"
           ParaContent="85,000 customer have already using our product."
         />
       </section>
-      <section className="marging">
+      <section className="marging mobile-space">
         <Meeting />
       </section>
-      <section className="marging content-slide">
+      <section className="marging content-slide mobile-space">
         <SwiperReview />
       </section>
-      <section className="mt-40 bg-black text-white py-8">
-        <div className="marging">
+      <section className="2xl:mt-40 xl:mt-20 mt-10 sm:mt-16 md:mt-20 lg:mt-24 bg-black text-white md:py-8 py-4">
+        <div className="marging mobile-space">
           <Title
             headerContent="How we build future"
             paraContent={`Glide gives you the powers of a developer and a designer. Create remarkable tools to solve the business problems you thought you never could.`}
           />
-          <div className="mt-28 grid grid-cols-2 gap-6">
+          <div className="lg:mt-28 grid lg:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 mt-10">
             <CardBox
               image={ImagePath.UNDERSTAND}
               background="black-box"
@@ -184,14 +211,14 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="pt-32 marging">
+      <section className="xl:pt-32 pt-8 marging mobile-space lg:pt-20">
         <Title
           headerContent="Industry Experience"
           paraContent="For over a decade, our team has tackled challenging projects across a wide variety of verticals. Here are just a few examples:"
           headingFont="box-heading"
         />
-        <div className="mt-14 flex items-center gap-6">
-          <div className="grid grid-cols-2 gap-6">
+        <div className="lg:mt-14 md:mt-10 flex flex-col xl:flex-row mt-7 items-center gap-6">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
             <CardBox
               background="white-box"
               spaces="spacing-box"

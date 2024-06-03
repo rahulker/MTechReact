@@ -2,9 +2,9 @@ import ImagePath from "../constant/ImagePath";
 
 const Meeting = () => {
   return (
-    <div className="grid grid-cols-2 items-center mt-20 meeting-container">
+    <div className="grid lg:grid-cols-2 grid-cols-1 items-center lg:mt-20 mt-5 meeting-container">
       <div>
-        <img src={ImagePath.MEETING} alt="meeting" />
+        <img src={ImagePath.MEETING} alt="meeting" className="mx-auto" />
       </div>
       <div className="meeting-content-container ">
         <h2>Who we are</h2>

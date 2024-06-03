@@ -1,3 +1,4 @@
+@import "./variable";
 .blog-btn {
   font-family: "Roboto";
 }
@@ -167,9 +168,165 @@
 
 .problem-gap {
   gap: 60px;
+  background: #fff;
   h2 {
     font-size: 24px;
     line-height: 22px;
     font-family: "Roboto";
+  }
+  p {
+    width: 90% !important;
+  }
+}
+
+.hardware,
+.how-it-work {
+  p {
+    width: 920px;
+  }
+}
+
+.Hardware-title {
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.content-floating {
+  bottom: 40px;
+}
+
+.photo-content {
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.trageted-content {
+  h2 {
+    font-size: 34px;
+    line-height: 130%;
+    font-family: "Roboto";
+  }
+}
+
+.trageted-customer {
+  padding: 40px 19px 40px 40px;
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  h3 {
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 22px;
+  }
+}
+
+.blur-bg {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.43);
+  bottom: 0;
+  width: 416px;
+  p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 30px;
+  }
+  svg {
+    background-color: $button-color;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .mobile-space {
+    margin: auto 20px;
+  }
+  .banner {
+    p {
+      width: auto;
+    }
+  }
+  .header-title {
+    margin-top: 68px;
+  }
+  .swiper-cntainer {
+    margin-top: 60px;
+  }
+  .meeting-container {
+    gap: 40px;
+    p {
+      margin: 20px 0;
+    }
+  }
+  .content-slide {
+    margin-top: 40px;
+  }
+  h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .trusted-para {
+    margin-top: 20px;
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+  .footer-query,
+  .footer-address {
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  h1 {
+    font-size: 48px;
+  }
+  .header-title {
+    margin-top: 40px;
+  }
+  .trusted-para {
+    margin-top: 20px;
+  }
+  .swiper-cntainer {
+    margin-top: 60px;
+  }
+  .mobile-space {
+    margin: 0 40px;
+  }
+  .meeting-container {
+    gap: 40px;
+  }
+  .content-slide {
+    margin-top: 60px;
+  }
+  .black-box-space {
+    padding: 30px 25px;
+  }
+  .footer-query {
+    gap: 100px;
+  }
+  .footer-address {
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .mobile-space {
+    margin: auto 40px;
+  }
+  .content-slide {
+    margin-top: 80px;
+  }
+  .banner {
+    padding: 100px 0;
+  }
+  .footer-address {
+    gap: 60px;
+  }
+  .footer-query {
+    gap: 100px;
   }
 }
