@@ -1,7 +1,7 @@
 // import React from 'react'
 import PropTypes from "prop-types";
 
-function CardBox({
+const CardBox = ({
   background,
   image,
   headingCard,
@@ -12,7 +12,7 @@ function CardBox({
   headingSize,
   headingFont,
   children,
-}) {
+}) => {
   return (
     <div className={`${background} ${spaces} text-left`}>
       <div className="h-full">
@@ -23,7 +23,7 @@ function CardBox({
       </div>
     </div>
   );
-}
+};
 CardBox.propTypes = {
   background: PropTypes.string,
   image: PropTypes.string,

@@ -1,6 +1,6 @@
 import ImagePath from "../constant/ImagePath";
 import { NavLink } from "react-router-dom";
-function Footer() {
+const Footer = () => {
   return (
     <footer className="my-20">
       <div className="grid grid-cols-4 marging justify-between footer-query">
@@ -48,6 +48,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

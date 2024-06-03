@@ -9,9 +9,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../component/Footer";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import BannerSection from "../component/custom/BannerSection";
+import BannerSection from "../component/BannerSection";
 import ImagePath from "../constant/ImagePath";
-function BlogDetails() {
+const BlogDetails = () => {
   return (
     <>
       <header className="bg-black">
@@ -131,6 +131,6 @@ function BlogDetails() {
       <Footer />
     </>
   );
-}
+};
 
 export default BlogDetails;

@@ -3,62 +3,41 @@ import BlogDetails from "./screens/BlogDetails";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./screens/Home";
 import AboutUs from "./screens/AboutUs";
-import Navbar from "./screens/Navbar";
 import "./assets/css/style.css";
 import "./assets/css/style-scss.css";
 import ContactUs from "./screens/ContactUs";
 import Blog from "./screens/Blog";
 import Product from "./screens/Product";
+import ProductDetails from "./screens/ProductDetails";
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: (
-        <div>
-          <Home />
-        </div>
-      ),
+      element: <Home />,
     },
     {
       path: "/about-us",
-      element: (
-        <div>
-          <AboutUs />
-        </div>
-      ),
+      element: <AboutUs />,
     },
     {
       path: "/contact-us",
-      element: (
-        <div>
-          <ContactUs />
-        </div>
-      ),
+      element: <ContactUs />,
     },
     {
       path: "/Blog",
-      element: (
-        <div>
-          <Blog />
-        </div>
-      ),
+      element: <Blog />,
     },
     {
       path: "/Product",
-      element: (
-        <div className="marging">
-          <Navbar />
-          <Product />
-        </div>
-      ),
+      element: <Product />,
     },
     {
-      path: "//Blog-details",
-      element: (
-        <div>
-          <BlogDetails />
-        </div>
-      ),
+      path: "/Blog-details",
+      element: <BlogDetails />,
+    },
+    {
+      path: "/product-details",
+      element: <ProductDetails />,
     },
   ]);
   return (

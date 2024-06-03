@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
-function BannerSection() {
+const BannerSection = () => {
   return (
     <section className="mt-32 banner">
       <div className="marging text-center">
@@ -17,6 +17,6 @@ function BannerSection() {
       </div>
     </section>
   );
-}
+};
 
 export default BannerSection;

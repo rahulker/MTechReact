@@ -27,7 +27,149 @@
   background: #f7f7f7;
 }
 
-.card-info {
+.card-info,
+.location-info {
   font-size: 17px;
   line-height: 30px;
+}
+
+.cloums-contact {
+  grid-template-columns: 550px 660px;
+  gap: 120px;
+}
+
+.input-field {
+  padding: 16px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.input-container {
+  grid-template-columns: 305px 305px;
+}
+
+.form-btn {
+  padding: 30px 50px;
+  font-family: "Roboto";
+}
+
+.angle-position {
+  right: 20px;
+  top: 50px;
+}
+
+.arrowChange {
+  transform: rotate(180deg);
+}
+
+.product-heading {
+  h2 {
+    font-size: 34px;
+    line-height: 22px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 32px;
+    width: 900px;
+  }
+}
+
+.floating-card-product {
+  padding: 70px;
+  width: 1130px;
+  background: #fff;
+  box-shadow: 9px 8px 7px 1px rgba(0, 0, 0, 0.2);
+  right: 20px;
+  bottom: -60px;
+  p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 40px;
+    font-family: "Roboto";
+  }
+  h2 {
+    font-size: 34px;
+    font-family: "Roboto";
+    line-height: 40px;
+  }
+}
+.icon-grid {
+  grid-template-columns: 350px 350px;
+  img {
+    width: 30px;
+  }
+}
+
+.image-control {
+  text-align: -webkit-right;
+}
+
+.reveverse-position {
+  left: 20px;
+}
+
+.nav-bg {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) -16%,
+    rgb(0, 0, 0) 61%
+  );
+  height: 100%;
+}
+
+.product-details {
+  background: url("/src/assets/image/car-parking-backgroung-image.jpg")
+    no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  h1 {
+    width: 1024px;
+  }
+  .header-container {
+    padding-bottom: 60px;
+  }
+}
+
+.car-device-detail {
+  h2 {
+    font-size: 34px;
+    line-height: 46px;
+    font-family: "Roboto" !important;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Roboto" !important;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+
+.problems {
+  padding: 110px 0;
+}
+
+.problm-content {
+  p {
+    font-size: 18px;
+    line-height: 32px;
+    width: 850px;
+  }
+}
+
+.problem-gap {
+  gap: 60px;
+  h2 {
+    font-size: 24px;
+    line-height: 22px;
+    font-family: "Roboto";
+  }
 }

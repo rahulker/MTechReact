@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import ImagePath from "../constant/ImagePath";
-function Navbar() {
+const Navbar = () => {
   return (
     <nav className="flex items-center justify-between">
       <div>
@@ -72,6 +72,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

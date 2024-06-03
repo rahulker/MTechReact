@@ -1,6 +1,6 @@
-import ImagePath from "../../constant/ImagePath";
+import ImagePath from "../constant/ImagePath";
 
-function Meeting() {
+const Meeting = () => {
   return (
     <div className="grid grid-cols-2 items-center mt-20 meeting-container">
       <div>
@@ -26,6 +26,6 @@ function Meeting() {
       </div>
     </div>
   );
-}
+};
 
 export default Meeting;

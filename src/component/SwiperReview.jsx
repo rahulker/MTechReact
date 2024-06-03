@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import ImagePath from "../../constant/ImagePath";
+import ImagePath from "../constant/ImagePath";
 import { Swiper, SwiperSlide } from "swiper/react";
 import swiperCore from "swiper/core";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
@@ -7,7 +7,7 @@ import "swiper/css";
 swiperCore.use([Navigation, Autoplay, Pagination]);
 import PropTypes from "prop-types";
 
-function SwiperContentSlide({ Content, Image }) {
+const SwiperContentSlide = ({ Content, Image }) => {
   return (
     <div className="grid grid-cols-3 ">
       <div className="container-content col-span-2">
@@ -26,7 +26,7 @@ function SwiperContentSlide({ Content, Image }) {
       />
     </div>
   );
-}
+};
 
 function SwiperReview() {
   const navigationPrevRef = useRef(null);

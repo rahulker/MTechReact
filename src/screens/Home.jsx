@@ -1,20 +1,20 @@
-import HeaderTitle from "../component/custom/HeaderTitle";
-import Title from "../component/custom/Title";
-import Meeting from "../component/custom/Meeting";
+import HeaderTitle from "../component/HeaderTitle";
+import Title from "../component/Title";
+import Meeting from "../component/Meeting";
 import { Swiper, SwiperSlide } from "swiper/react";
 import swiperCore from "swiper/core";
 import ImagePath from "../constant/ImagePath";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
-import SwiperReview from "../component/custom/SwiperReview";
-import TrustedCompany from "../component/custom/TrustedCompany";
+import SwiperReview from "../component/SwiperReview";
+import TrustedCompany from "../component/TrustedCompany";
 import Navbar from "../screens/Navbar";
-import CardBox from "../component/custom/CardBox";
-import BoxText from "../component/custom/BoxText";
-import BannerSection from "../component/custom/BannerSection";
+import CardBox from "../component/CardBox";
+import BoxText from "../component/BoxText";
+import BannerSection from "../component/BannerSection";
 import Footer from "../component/Footer";
 swiperCore.use([Navigation, Autoplay]);
-function Home() {
+const Home = () => {
   return (
     <>
       <header className="bg-black">
@@ -36,7 +36,7 @@ function Home() {
           >
             <SwiperSlide>
               <img
-                src={ImagePath.WATCH}
+                src={ImagePath.WATCHINHAND}
                 alt="Watch in Hand"
                 className="w-full"
               />
@@ -53,7 +53,7 @@ function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src={ImagePath.WATCH}
+                src={ImagePath.WATCHINHAND}
                 alt="Watch in Hand"
                 className="w-full"
               />
@@ -70,7 +70,7 @@ function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src={ImagePath.WATCH}
+                src={ImagePath.WATCHINHAND}
                 alt="Watch in Hand"
                 className="w-full"
               />
@@ -240,6 +240,6 @@ function Home() {
       <Footer />
     </>
   );
-}
+};
 
 export default Home;

@@ -1,15 +1,15 @@
 import Navbar from "./Navbar";
-import HeaderTitle from "../component/custom/HeaderTitle";
+import HeaderTitle from "../component/HeaderTitle";
 import Footer from "../component/Footer";
-import Meeting from "../component/custom/Meeting";
-import TrustedCompany from "../component/custom/TrustedCompany";
+import Meeting from "../component/Meeting";
+import TrustedCompany from "../component/TrustedCompany";
 // import React, { useState, useEffect } from "react";
-import SwiperReview from "../component/custom/SwiperReview";
-import BannerSection from "../component/custom/BannerSection";
-import Title from "../component/custom/Title";
-import CardBox from "../component/custom/CardBox";
+import SwiperReview from "../component/SwiperReview";
+import BannerSection from "../component/BannerSection";
+import Title from "../component/Title";
+import CardBox from "../component/CardBox";
 import ImagePath from "../constant/ImagePath";
-function AboutUs() {
+const AboutUs = () => {
   return (
     <>
       <header className="bg-black pb-44">
@@ -93,6 +93,6 @@ function AboutUs() {
       <Footer />
     </>
   );
-}
+};
 
 export default AboutUs;

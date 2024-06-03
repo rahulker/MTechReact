@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Footer from "../component/Footer";
-import BannerSection from "../component/custom/BannerSection";
+import BannerSection from "../component/BannerSection";
 import ImagePath from "../constant/ImagePath";
 import Navbar from "./Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,10 +10,10 @@ import {
   faAnglesRight,
   faAnglesLeft,
 } from "@fortawesome/free-solid-svg-icons";
-import HeaderTitle from "../component/custom/HeaderTitle";
+import HeaderTitle from "../component/HeaderTitle";
 import PaginationData from "../constant/PaginationData";
 
-function Blog() {
+const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const recordPerView = 8;
   const lastIndex = currentPage * recordPerView;
@@ -134,6 +134,6 @@ function Blog() {
       <Footer />
     </>
   );
-}
+};
 
 export default Blog;
