@@ -20,10 +20,10 @@ const BlogDetails = () => {
         </div>
       </header>
       {/* fitness watch */}
-      <section className="marging ">
-        <div className="blog-heading mt-32 mx-auto">
+      <section className="marging mobile-space">
+        <div className="blog-heading 2xl:mt-32 mt-16 mx-auto">
           <h1>Fitness tracking exceptional product experiences to life.</h1>
-          <div className="flex items-center justify-between mt-5">
+          <div className="flex flex-col md:flex-row md:items-center gap-4 justify-between mt-5">
             <div className="flex items-center gap-5 ">
               <p>BEST PRACTICES</p>
               <p className="border-para"></p>
@@ -38,7 +38,7 @@ const BlogDetails = () => {
         <img
           src={ImagePath.FITNESSWATCHNEW}
           alt="fitness watch"
-          className="w-full mt-16"
+          className="w-full lg:mt-16 mt-5"
         />
         <div className="blog-data mx-auto ">
           <p>
@@ -78,7 +78,7 @@ const BlogDetails = () => {
         </div>
       </section>
       {/* ecpoler */}
-      <section className="marging  !mt-9">
+      <section className="marging mobile-space md:!mt-9 !mt-6">
         <div className="blog-details mx-auto">
           <h2>Product explorer</h2>
           <p className="!mt-2.5">
@@ -91,8 +91,8 @@ const BlogDetails = () => {
             alt="fitness watch close look"
             className="w-full mt-5"
           />
-          <h2 className="mt-9">Research-Driven Process</h2>
-          <p className="!mt-6">
+          <h2 className="lg:mt-9 mt-3 md:mt-6">Research-Driven Process</h2>
+          <p className="md:!mt-6 !mt-3">
             This introductory phase of a Tracker program is essentially a
             fact-finding expedition. There are 4 concrete areas that we need to
             understand thoroughly:

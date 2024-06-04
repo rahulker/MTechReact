@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import Scroll from "../constant/Scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import HeaderTitle from "../component/HeaderTitle";
@@ -12,19 +13,21 @@ import { NavLink } from "react-router-dom";
 const Product = () => {
   return (
     <>
-      <header className="bg-black pb-44">
+      <header className="bg-black 2xl:pb-44 pb-10">
         <div className="marging">
           <Navbar />
-          <HeaderTitle
-            h1Title="They’re all passion products"
-            headingPara="We bring exceptional product experiences to life. From multinational enterprises to early-stage startups, our clients have one thing in common — big ideas. Most of our projects are under wraps, but here’s a sampling of stuff we can show you."
-            ButtonText="Get Started"
-            buttonShow="hidden"
-          />
+          <div className="mobile-space">
+            <HeaderTitle
+              h1Title="They’re all passion products"
+              headingPara="We bring exceptional product experiences to life. From multinational enterprises to early-stage startups, our clients have one thing in common — big ideas. Most of our projects are under wraps, but here’s a sampling of stuff we can show you."
+              ButtonText="Get Started"
+              buttonShow="hidden"
+            />
+          </div>
         </div>
       </header>
       <section>
-        <div className="product-heading pt-28 marging">
+        <div className="product-heading lg:pt-28 pt-8 marging mobile-space">
           <Title
             headerContent="Wide Variety Of Products"
             paraContent="Our commitment to creating smart solutions for real-world challenges is unwavering. Through a fusion of cutting-edge technologies including Beacon, Bluetooth, GPS data, AI/ML, and Machine programming."
@@ -46,7 +49,7 @@ const Product = () => {
             IconContent4="Innovative theft-preventive solution"
           />
         </div>
-        <div className="mt-56">
+        <div className="lg:mt-56 mt-10">
           <ProductBanner
             Reverse={true}
             ImageProduct={ImagePath.COW}
@@ -61,7 +64,7 @@ const Product = () => {
             IconContent4="Innovative theft-preventive solution"
           />
         </div>
-        <div className="mt-56">
+        <div className="lg:mt-56 mt-10">
           <ProductBanner
             Reverse={false}
             ImageProduct={ImagePath.BOAT}
@@ -76,7 +79,7 @@ const Product = () => {
             IconContent4="Long Battery Life"
           />
         </div>
-        <div className="mt-56 mb-32">
+        <div className="lg:mt-56 mt-10 2xl:mb-32 lg:mb-44 mb-10">
           <ProductBanner
             Reverse={true}
             ImageProduct={ImagePath.SETUP}
@@ -92,7 +95,11 @@ const Product = () => {
           />
         </div>
         <div className="mt-20 w-fit mx-auto">
-          <NavLink to="/product-details" className="header-btn">
+          <NavLink
+            to="/product-details"
+            className="header-btn"
+            onClick={Scroll}
+          >
             <FontAwesomeIcon icon={faCircle} fade className="mr-1" /> Load
             More...
           </NavLink>

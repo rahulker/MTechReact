@@ -1,5 +1,6 @@
 import ImagePath from "../constant/ImagePath";
 import { NavLink } from "react-router-dom";
+import Scroll from "../constant/Scroll";
 const Footer = () => {
   return (
     <footer className="lg:my-20 my-5">
@@ -19,20 +20,28 @@ const Footer = () => {
         </div>
         {/* 2 */}
         <div className="flex items-start flex-col justify-between xl:flex-row footer-address col-span-2 lg:col-auto xl:col-span-2">
-          <div className="flex flex-col lg:items-center  items-start gap-4">
+          <div className="flex flex-col xl:items-center  items-start gap-4">
             <h3>Quick Links</h3>
             <ul className="flex md:flex-col lg:flex-row xl:flex-col items-start gap-4">
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" onClick={Scroll}>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/Product">Product</NavLink>
+                <NavLink to="/Product" onClick={Scroll}>
+                  Product
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/about-us">About Us</NavLink>
+                <NavLink to="/about-us" onClick={Scroll}>
+                  About Us
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/contact-us">Contact Us</NavLink>
+                <NavLink to="/contact-us" onClick={Scroll}>
+                  Contact Us
+                </NavLink>
               </li>
             </ul>
           </div>

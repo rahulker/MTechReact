@@ -33,7 +33,7 @@ const AboutUs = () => {
       <section className="marging mobile-space">
         <Meeting />
       </section>
-      <section className="marging lg:!mt-14 !mt-7 mobile-space">
+      <section className="marging lg:!mt-14 !mt-7 mobile-space text-center xl:text-left">
         <TrustedCompany Header="Trusted By" HiddenPara="hidden" />
       </section>
       <section className="xl:pt-32 lg:pt-20 pt-8 marging mobile-space">

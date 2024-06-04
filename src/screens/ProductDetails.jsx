@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import UniqueSelling from "../component/uniqueSelling";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Title from "../component/Title";
@@ -8,6 +9,8 @@ import ImagePath from "../constant/ImagePath";
 import MoreProduct from "../component/moreProduct";
 import CustomerTarget from "../component/CustomerTarget";
 import ProblemCards from "../component/ProblemCards";
+import { NavLink } from "react-router-dom";
+import Scroll from "../constant/Scroll";
 const ProductDetails = () => {
   return (
     <>
@@ -15,21 +18,29 @@ const ProductDetails = () => {
         <div className="nav-bg">
           <div className="marging">
             <Navbar />
-            <div className="header-container">
-              <h1 className="text-white mt-80">
+            {/* <div className="header-container ">
+              <h1 className="text-white mt-80 mobile-space">
                 Welcome to the Future of Parking: Smart Parking System
               </h1>
-            </div>
+            </div> */}
           </div>
         </div>
       </header>
-      <section className="marging ">
-        <div className="flex items-center mt-28 justify-between">
+      <section className="marging mobile-space ">
+        <div className="flex lg:flex-row items-center  flex-col lg:mt-28 mt-10 justify-between lg:gap-5 xl:gap-10">
           {/* content */}
+          <img
+            src={ImagePath.DETAILPARKING}
+            alt="car parking device"
+            className="lg:hidden"
+          />
+
           <div className="car-device-detail">
             <h2>Smart Parking System</h2>
-            <h3 className="mt-8">Revolutionize Your Parking Experience</h3>
-            <p className="my-8">
+            <h3 className="mt-8 lg:mt-5">
+              Revolutionize Your Parking Experience
+            </h3>
+            <p className="xl:my-8 md:my-5 my-4">
               ManekTech Innovations LLP, we are on a mission to reshape the
               future through groundbreaking technological solutions. Our team of
               visionary engineers, designers, and developers will be dedicated
@@ -37,7 +48,7 @@ const ProductDetails = () => {
               challenges into elegant, user-centric solutions that drive
               progress.
             </p>
-            <p className="my-8">
+            <p className="lg:my-8 md:my-5 my-4">
               Our commitment to creating smart solutions for real-world
               challenges is unwavering. Through a fusion of cutting-edge
               technologies including Beacon, Bluetooth, GPS data, AI/ML, and
@@ -45,12 +56,16 @@ const ProductDetails = () => {
             </p>
           </div>
           {/* Photo */}
-          <img src={ImagePath.DETAILPARKING} alt="car parking device" />
+          <img
+            src={ImagePath.DETAILPARKING}
+            alt="car parking device"
+            className="hidden lg:block lg:w-2/5"
+          />
         </div>
       </section>
       {/* Problems */}
-      <section className="white-box mt-16 problems">
-        <div className="marging problm-content">
+      <section className="white-box lg:mt-16 mt-6 problems">
+        <div className="marging problm-content mobile-space">
           <Title
             headerContent="Problem Statement"
             paraContent="Our commitment to creating smart solutions for real-world challenges
@@ -97,14 +112,14 @@ const ProductDetails = () => {
       </section>
       {/* hardware & Software */}
       <section>
-        <div className="!mt-10 marging hardware">
+        <div className="!mt-10 marging hardware mobile-space">
           <Title
             headerContent="Components Of Our Solution"
             paraContent="Our commitment to creating smart solutions for real-world challenges is unwavering. Through a fusion of cutting-edge technologies including Beacon, Bluetooth, GPS data, AI/ML, and Machine programming."
             headingFont="box-heading"
           />
         </div>
-        <div className="grid grid-cols-2 items-center mt-16">
+        <div className="grid lg:grid-cols-2 grid-cols-1 items-center mt-16">
           <div className="relative">
             <img
               src={ImagePath.PARKINGMACHINE}
@@ -115,7 +130,7 @@ const ProductDetails = () => {
               <p className="Hardware-title bg-white text-black rounded-sm mb-5 inline-block">
                 Hardware
               </p>
-              <p className="px-16 photo-content hardware-content">
+              <p className="2xl:px-16 px-2.5 photo-content hardware-content">
                 Through diligent research and innovation, we have developed our
                 own hardware tailored to Indian conditions. Our meticulous
                 approach included testing the devices resilience by fully
@@ -137,7 +152,7 @@ const ProductDetails = () => {
               <p className="Hardware-title bg-white text-black rounded-sm mb-5 inline-block">
                 Software
               </p>
-              <p className="px-16 photo-content">
+              <p className="2xl:px-16 px-2.5 photo-content hardware-content">
                 Each parking slot will be categorized into zones and seamlessly
                 integrated into our mobile app. Users will have the convenience
                 of checking slot availability within a specific zone directly
@@ -149,9 +164,94 @@ const ProductDetails = () => {
           </div>
         </div>
       </section>
+      {/* cards */}
+      <section className="my-20 mobile-space">
+        <div className="flex mt-10 flex-col items-center 2xl:flex-row gap-5">
+          <div className="text-column ">
+            <h2>Unique Selling Proposition</h2>
+            <p>Smart Parking, Smarter Features: Our Competitive Edge</p>
+          </div>
+          {/* mobile */}
+          <div className="grid sm:grid-cols-2 2xl:hidden lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            <div>
+              <UniqueSelling
+                CardImage={ImagePath.UMBRALA}
+                ImageAlt="Umbrella icon"
+                CardTitle="Weather proof Reliability"
+              />
+            </div>
+            <div>
+              <UniqueSelling
+                CardImage={ImagePath.PACKAGE}
+                ImageAlt="Package icon"
+                CardTitle="Robust Build System"
+              />
+            </div>
+            <div>
+              <UniqueSelling
+                CardImage={ImagePath.MOBILE}
+                ImageAlt="Mobile icon"
+                CardTitle="Convenient Mobile Control"
+              />
+            </div>
+            <div>
+              <UniqueSelling
+                CardImage={ImagePath.SECURE}
+                ImageAlt="Alam icon"
+                CardTitle="Innovative Theft-Prevention Solution"
+              />
+            </div>
+          </div>
+          {/* desktop */}
+          <div className="hidden 2xl:block">
+            <UniqueSelling
+              CardImage={ImagePath.UMBRALA}
+              ImageAlt="Umbrella icon"
+              CardTitle="Weather proof Reliability"
+            />
+          </div>
+          <div className="hidden 2xl:block">
+            <UniqueSelling
+              CardImage={ImagePath.PACKAGE}
+              ImageAlt="Package icon"
+              CardTitle="Robust Build System"
+            />
+          </div>
+          <div className="hidden 2xl:block">
+            <UniqueSelling
+              CardImage={ImagePath.MOBILE}
+              ImageAlt="Mobile icon"
+              CardTitle="Convenient Mobile Control"
+            />
+          </div>
+          <div className="hidden 2xl:block">
+            <UniqueSelling
+              CardImage={ImagePath.SECURE}
+              ImageAlt="Alam icon"
+              CardTitle="Innovative Theft-Prevention Solution"
+            />
+          </div>
+        </div>
+        <div className="w-fit mt-10 contact-us mx-auto">
+          <h2>Contact Us Today!</h2>
+          <p className="mt-5">
+            We are dedicated to providing our customers with the highest level
+            of service and support. Contact us today to learn more about our
+            specialized services and how we can help with your shipment needs.
+          </p>
+          <NavLink
+            className="header-btn flex items-center gap-2.5 !bg-white w-fit"
+            to="/contact-us"
+            onClick={Scroll}
+          >
+            Connect Now
+            <FontAwesomeIcon icon={faArrowRight} />
+          </NavLink>
+        </div>
+      </section>
       {/* how it works */}
-      <section className="marging">
-        <div className="mt-32 how-it-work">
+      <section className="marging mobile-space">
+        <div className="xl:mt-32 lg:mt-20 mt-10 how-it-work">
           <Title
             headingFont="box-heading"
             headerContent="How It Works"
@@ -171,7 +271,7 @@ const ProductDetails = () => {
       </section>
       {/* Targated customer */}
       <section className="mt-20 white-box">
-        <div className="marging grid grid-cols-2 gap-10 py-28 h-full">
+        <div className="marging grid lg:grid-cols-2 grid-cols-1 mobile-space gap-10 lg:py-28 py-14 h-full">
           <div>
             <div className="trageted-content">
               <h2>
@@ -190,7 +290,7 @@ const ProductDetails = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-6 justify-between">
+          <div className="flex flex-col md:gap-6 gap-3 justify-between">
             <CustomerTarget
               headingTitle="Municipal Corporations"
               paraContent="The primary target is the local Municipal Corporation or city government looking to enhance revenue streams and optimize parking management without signiﬁcant capital investment. Your solution aligns with their goal of improving city infrastructure and ﬁnancial sustainability."
@@ -207,8 +307,8 @@ const ProductDetails = () => {
         </div>
       </section>
       {/* more product */}
-      <section className="marging">
-        <div className="flex items-center justify-between mt-28">
+      <section className="marging mobile-space">
+        <div className="flex items-center justify-between lg:mt-28 mt-8">
           <h2 className="box-heading">More Product</h2>
           <div className="flex items-center gap-2.5">
             <a href="#" className="cursor-pointer">
@@ -217,7 +317,7 @@ const ProductDetails = () => {
             <FontAwesomeIcon icon={faArrowRight} />
           </div>
         </div>
-        <div className="mt-20 flex gap-6 items-center  flex-wrap">
+        <div className="lg:mt-20 mt-5 flex gap-6 items-center justify-center flex-wrap">
           <MoreProduct
             Image={ImagePath.FITNESSPRODUCT}
             Title="fitness tracking smart watch"

@@ -5,6 +5,13 @@
   font-family: $font-gobal;
   padding: 0;
 }
+.problem-gap {
+  p {
+    p {
+      width: 90% !important;
+    }
+  }
+}
 h1,
 h2,
 h3,
@@ -49,6 +56,9 @@ h6 {
     margin-left: 10px;
   }
 }
+.banner-btn {
+  font-family: $font-gobal;
+}
 .marging {
   margin: auto 312px;
   @media screen and (max-width: 1535px) {
@@ -73,9 +83,13 @@ p {
     font-size: 14px !important;
     line-height: 22px !important;
   }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     font-size: 18px !important;
-    line-height: 24px !important ;
+    line-height: 28px !important ;
   }
 }
 
@@ -95,13 +109,17 @@ h2 {
     font-size: 22px;
     line-height: 35px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 30px !important;
+    line-height: 48px !important;
+  }
   @media screen and (min-width: 640px) and (max-width: 767px) {
     font-size: 26px;
     line-height: 40px;
   }
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
-    font-size: 30px;
-    line-height: 44px;
+    font-size: 32px;
+    line-height: 48px;
   }
 }
 
@@ -131,7 +149,7 @@ h2 {
 
 .container-content {
   h2 {
-    font-family: "Roboto";
+    font-family: $font-gobal;
   }
 }
 .content-slide {
@@ -165,7 +183,7 @@ h3 {
 }
 
 .box-heading {
-  font-family: "Roboto" !important;
+  font-family: $font-gobal !important;
 }
 .white-heading-actual {
   font-size: 28px;
@@ -189,7 +207,7 @@ h3 {
   background: #f7f7f7;
   padding: 112px 0;
   h2 {
-    font-family: "Roboto";
+    font-family: $font-gobal;
   }
   p {
     width: 772px;
@@ -197,14 +215,14 @@ h3 {
 }
 
 footer {
-  font-family: "Roboto";
+  font-family: $font-gobal;
   p {
     font-size: 16px;
     font-weight: 300;
     line-height: 30px;
   }
   h3 {
-    font-family: "Roboto";
+    font-family: $font-gobal;
     font-size: 16px;
     font-weight: 700;
     line-height: 16px;
@@ -224,11 +242,11 @@ footer {
 
 .watch-contemt {
   h3 {
-    font-family: "Roboto";
+    font-family: $font-gobal;
     font-size: 34px;
     line-height: 46px;
   }
-  div {
+  p {
     font-size: 16px;
     line-height: 32px;
   }
@@ -247,7 +265,7 @@ footer {
 .blog-heading {
   width: 1075px;
   h1 {
-    font-family: "Roboto";
+    font-family: $font-gobal;
     font-size: 60px;
     line-height: 76px;
   }
@@ -257,7 +275,7 @@ footer {
 .blog-details {
   width: 1075px;
   h2 {
-    font-family: "Roboto";
+    font-family: $font-gobal;
   }
   font-size: 18px;
   line-height: 32px;
@@ -266,7 +284,57 @@ footer {
   }
 }
 
+.text-column {
+  h2 {
+    font-size: 34px;
+    line-height: 130%;
+    font-family: $font-gobal;
+  }
+  p {
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+}
+.unique-card {
+  padding: 50px 126px 107px 38px;
+  background-color: #edf0f3;
+  width: 330px;
+  height: 370px;
+  h2 {
+    font-size: 30px;
+    font-family: $font-gobal;
+    margin-top: 20px;
+    font-weight: 700;
+    line-height: 39px;
+  }
+}
+.contact-us {
+  width: 511px;
+  padding: 42px 32px;
+  background-color: #ffc01d;
+  h2,
+  a {
+    font-family: $font-gobal;
+  }
+}
+
 @media screen and (max-width: 1439px) {
+  .blur-bg {
+    width: -webkit-fill-available !important;
+    p,
+    svg {
+      padding: 22px !important;
+    }
+  }
+  .how-it-work,
+  .hardware {
+    p {
+      width: auto !important;
+    }
+  }
+
   nav {
     z-index: 1000;
     padding: 10px;
@@ -294,6 +362,74 @@ footer {
   }
 }
 @media screen and (max-width: 639px) {
+  .unique-card {
+    width: auto;
+    height: auto;
+    padding: 40px 95px 100px 38px;
+  }
+  .contact-us {
+    width: auto;
+    padding: 30px 25px;
+  }
+  .trageted-customer {
+    padding: 30px 20px 30px 20px !important;
+    h3 {
+      font-size: 18px !important;
+      line-height: 20px !important;
+    }
+  }
+  .car-device-detail {
+    h2 {
+      font-size: 26px !important;
+      margin-top: 20px;
+      line-height: 30px !important;
+    }
+    h3 {
+      font-size: 18px !important;
+      line-height: 24px !important;
+      margin-top: 20px;
+    }
+  }
+  .problems {
+    padding: 40px 0 !important;
+    p {
+      width: 100% !important;
+    }
+  }
+  .mobile-card {
+    padding: 0 15px 15px;
+  }
+  .problem-gap {
+    h2 {
+      font-size: 18px !important;
+      line-height: 20px !important;
+    }
+    gap: 20px !important;
+  }
+  .product-heading {
+    p {
+      width: auto !important;
+    }
+    h2 {
+      font-size: 22px !important;
+      line-height: 30px !important;
+    }
+  }
+  .floating-card-product {
+    width: auto !important;
+    padding: 20px 10px !important;
+    box-shadow: none !important;
+    h2 {
+      font-size: 26px !important;
+      line-height: 34px !important;
+    }
+  }
+  .banner-btn {
+    margin-top: 26px !important;
+  }
+  .icon-grid {
+    grid-template-columns: auto !important;
+  }
   .watch-contemt {
     h3 {
       font-size: 22px;
@@ -302,6 +438,32 @@ footer {
     div {
       margin-top: 10px;
     }
+  }
+  .form-btn {
+    padding: 20px 40px !important;
+  }
+  .cloums-contact {
+    grid-template-columns: auto !important;
+    gap: 40px !important;
+  }
+  .input-container {
+    grid-template-columns: auto !important;
+  }
+  .card-para {
+    width: auto !important;
+  }
+  .card-info {
+    padding: 25px 18px !important;
+  }
+  .card-info,
+  .location-info {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  .blog-data,
+  .blog-details,
+  .blog-heading {
+    width: auto;
   }
   .paginationData {
     margin-top: 15px;
@@ -374,12 +536,101 @@ footer {
       font-size: 12px;
     }
   }
+  .blog-heading {
+    h1 {
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+  .blog-data {
+    p {
+      margin-top: 20px;
+    }
+  }
+  .blog-details,
+  .blog-data {
+    li {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+  .photo-content {
+    font-size: 8px !important;
+    line-height: 12px !important;
+  }
+  .Hardware-title {
+    padding: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .content-floating {
+    bottom: 5px !important;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .header-title {
     margin-top: 68px;
   }
+  .unique-card {
+    width: auto;
+    height: 100%;
+  }
+  .problm-content {
+    p {
+      width: auto !important;
+    }
+  }
+  .problem-gap {
+    gap: 40px !important;
+  }
+  .mobile-card {
+    padding: 0 40px 40px;
+  }
+  .problems {
+    padding: 50px 0 !important;
+  }
+  .floating-card-product {
+    box-shadow: none !important;
+    width: auto !important;
+    padding: 30px 40px !important;
+    h2 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    .icon-grid {
+      grid-template-columns: auto auto;
+    }
+  }
+  .product-heading {
+    h2,
+    p {
+      width: auto !important;
+    }
+  }
+  .form-btn {
+    padding: 20px 40px !important;
+  }
+  .cloums-contact {
+    grid-template-columns: auto !important;
+    gap: 40px !important;
+  }
+  .input-container {
+    grid-template-columns: auto auto !important;
+    align-items: center;
+    gap: 20px;
+  }
+  .card-para {
+    width: auto !important;
+  }
+  .card-info {
+    padding: 25px 18px !important;
+  }
+  .card-info,
+  .location-info {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
   h1 {
     font-size: 50px;
   }

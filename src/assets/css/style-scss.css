@@ -21,6 +21,10 @@
   padding: 0;
 }
 
+.problem-gap p p {
+  width: 90% !important;
+}
+
 h1,
 h2,
 h3,
@@ -72,6 +76,10 @@ h6 {
   margin-left: 10px;
 }
 
+.banner-btn {
+  font-family: "Roboto";
+}
+
 .marging {
   margin: auto 312px;
 }
@@ -103,10 +111,16 @@ p {
     line-height: 22px !important;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   p {
     font-size: 18px !important;
-    line-height: 24px !important;
+    line-height: 28px !important;
   }
 }
 
@@ -130,6 +144,12 @@ h2 {
     line-height: 35px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  h2 {
+    font-size: 30px !important;
+    line-height: 48px !important;
+  }
+}
 @media screen and (min-width: 640px) and (max-width: 767px) {
   h2 {
     font-size: 26px;
@@ -138,8 +158,8 @@ h2 {
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   h2 {
-    font-size: 30px;
-    line-height: 44px;
+    font-size: 32px;
+    line-height: 48px;
   }
 }
 
@@ -266,7 +286,7 @@ footer h3 {
   font-size: 34px;
   line-height: 46px;
 }
-.watch-contemt div {
+.watch-contemt p {
   font-size: 16px;
   line-height: 32px;
 }
@@ -305,7 +325,54 @@ footer h3 {
   margin-top: 30px;
 }
 
+.text-column h2 {
+  font-size: 34px;
+  line-height: 130%;
+  font-family: "Roboto";
+}
+.text-column p {
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.unique-card {
+  padding: 50px 126px 107px 38px;
+  background-color: #edf0f3;
+  width: 330px;
+  height: 370px;
+}
+.unique-card h2 {
+  font-size: 30px;
+  font-family: "Roboto";
+  margin-top: 20px;
+  font-weight: 700;
+  line-height: 39px;
+}
+
+.contact-us {
+  width: 511px;
+  padding: 42px 32px;
+  background-color: #ffc01d;
+}
+.contact-us h2,
+.contact-us a {
+  font-family: "Roboto";
+}
+
 @media screen and (max-width: 1439px) {
+  .blur-bg {
+    width: -webkit-fill-available !important;
+  }
+  .blur-bg p,
+  .blur-bg svg {
+    padding: 22px !important;
+  }
+  .how-it-work p,
+  .hardware p {
+    width: auto !important;
+  }
   nav {
     z-index: 1000;
     padding: 10px;
@@ -331,12 +398,102 @@ footer h3 {
   }
 }
 @media screen and (max-width: 639px) {
+  .unique-card {
+    width: auto;
+    height: auto;
+    padding: 40px 95px 100px 38px;
+  }
+  .contact-us {
+    width: auto;
+    padding: 30px 25px;
+  }
+  .trageted-customer {
+    padding: 30px 20px 30px 20px !important;
+  }
+  .trageted-customer h3 {
+    font-size: 18px !important;
+    line-height: 20px !important;
+  }
+  .car-device-detail h2 {
+    font-size: 26px !important;
+    margin-top: 20px;
+    line-height: 30px !important;
+  }
+  .car-device-detail h3 {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-top: 20px;
+  }
+  .problems {
+    padding: 40px 0 !important;
+  }
+  .problems p {
+    width: 100% !important;
+  }
+  .mobile-card {
+    padding: 0 15px 15px;
+  }
+  .problem-gap {
+    gap: 20px !important;
+  }
+  .problem-gap h2 {
+    font-size: 18px !important;
+    line-height: 20px !important;
+  }
+  .product-heading p {
+    width: auto !important;
+  }
+  .product-heading h2 {
+    font-size: 22px !important;
+    line-height: 30px !important;
+  }
+  .floating-card-product {
+    width: auto !important;
+    padding: 20px 10px !important;
+    box-shadow: none !important;
+  }
+  .floating-card-product h2 {
+    font-size: 26px !important;
+    line-height: 34px !important;
+  }
+  .banner-btn {
+    margin-top: 26px !important;
+  }
+  .icon-grid {
+    grid-template-columns: auto !important;
+  }
   .watch-contemt h3 {
     font-size: 22px;
     line-height: 28px;
   }
   .watch-contemt div {
     margin-top: 10px;
+  }
+  .form-btn {
+    padding: 20px 40px !important;
+  }
+  .cloums-contact {
+    grid-template-columns: auto !important;
+    gap: 40px !important;
+  }
+  .input-container {
+    grid-template-columns: auto !important;
+  }
+  .card-para {
+    width: auto !important;
+  }
+  .card-info {
+    padding: 25px 18px !important;
+  }
+  .card-info,
+  .location-info {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  .blog-data,
+  .blog-details,
+  .blog-heading {
+    width: auto;
   }
   .paginationData {
     margin-top: 15px;
@@ -407,10 +564,88 @@ footer h3 {
   footer li {
     font-size: 12px;
   }
+  .blog-heading h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .blog-data p {
+    margin-top: 20px;
+  }
+  .blog-details li,
+  .blog-data li {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .photo-content {
+    font-size: 8px !important;
+    line-height: 12px !important;
+  }
+  .Hardware-title {
+    padding: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .content-floating {
+    bottom: 5px !important;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .header-title {
     margin-top: 68px;
+  }
+  .unique-card {
+    width: auto;
+    height: 100%;
+  }
+  .problm-content p {
+    width: auto !important;
+  }
+  .problem-gap {
+    gap: 40px !important;
+  }
+  .mobile-card {
+    padding: 0 40px 40px;
+  }
+  .problems {
+    padding: 50px 0 !important;
+  }
+  .floating-card-product {
+    box-shadow: none !important;
+    width: auto !important;
+    padding: 30px 40px !important;
+  }
+  .floating-card-product h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .floating-card-product .icon-grid {
+    grid-template-columns: auto auto;
+  }
+  .product-heading h2,
+  .product-heading p {
+    width: auto !important;
+  }
+  .form-btn {
+    padding: 20px 40px !important;
+  }
+  .cloums-contact {
+    grid-template-columns: auto !important;
+    gap: 40px !important;
+  }
+  .input-container {
+    grid-template-columns: auto auto !important;
+    align-items: center;
+    gap: 20px;
+  }
+  .card-para {
+    width: auto !important;
+  }
+  .card-info {
+    padding: 25px 18px !important;
+  }
+  .card-info,
+  .location-info {
+    font-size: 14px !important;
+    line-height: 22px !important;
   }
   h1 {
     font-size: 50px;
@@ -603,9 +838,6 @@ footer h3 {
   line-height: 22px;
   font-family: "Roboto";
 }
-.problem-gap p {
-  width: 90% !important;
-}
 
 .hardware p,
 .how-it-work p {
@@ -666,6 +898,77 @@ footer h3 {
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
+  .blog-data,
+  .blog-details,
+  .blog-heading {
+    width: auto;
+  }
+  .unique-card {
+    width: auto;
+    height: 100%;
+  }
+  .problm-content p {
+    width: auto !important;
+  }
+  .problem-gap {
+    gap: 30px;
+  }
+  .mobile-card {
+    padding: 0 30px 30px;
+  }
+  .floating-card-product {
+    width: auto;
+    padding: 20px 30px;
+  }
+  .floating-card-product h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .floating-card-product .icon-grid {
+    grid-template-columns: auto auto;
+  }
+  .product-heading h2,
+  .product-heading p {
+    width: auto;
+  }
+  .product-heading h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .form-btn {
+    padding: 20px 40px !important;
+  }
+  .cloums-contact {
+    grid-template-columns: auto !important;
+    gap: 40px !important;
+  }
+  .input-container {
+    grid-template-columns: auto !important;
+  }
+  .card-para {
+    width: auto !important;
+  }
+  .card-info {
+    padding: 25px 18px !important;
+  }
+  .card-info,
+  .location-info {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  .blog-heading h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  .blog-data p,
+  .blog-details p {
+    margin-top: 20px;
+  }
+  .blog-data li,
+  .blog-details li {
+    font-size: 14px;
+    line-height: 20px;
+  }
   .mobile-space {
     margin: auto 20px;
   }
@@ -700,8 +1003,90 @@ footer h3 {
   .footer-address {
     gap: 40px;
   }
+  .problems {
+    padding: 40px 0;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .unique-card {
+    width: auto;
+    height: 100%;
+  }
+  .problm-content p {
+    width: auto !important;
+  }
+  .problem-gap {
+    gap: 40px !important;
+  }
+  .mobile-card {
+    padding-right: 20px;
+  }
+  .mobile-card p {
+    font-size: 16px !important;
+  }
+  .trageted-customer p {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+  .banner {
+    padding: 60px 0;
+  }
+  .hardware-content {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+  .content-floating {
+    bottom: 10px;
+  }
+  .car-device-detail h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .Hardware-title {
+    padding: 10px;
+  }
+  .problems {
+    padding: 50px 0 !important;
+  }
+  .blog-data,
+  .blog-details,
+  .blog-heading {
+    width: auto;
+  }
+  .floating-card-product {
+    padding: 30px 20px;
+    width: 640px;
+    right: 8px;
+    bottom: -120px;
+  }
+  .reveverse-position {
+    left: 8px;
+  }
+  .icon-grid {
+    grid-template-columns: auto auto;
+  }
+  .form-btn {
+    padding: 20px 40px !important;
+  }
+  .cloums-contact {
+    grid-template-columns: auto auto !important;
+    gap: 40px !important;
+  }
+  .input-container {
+    grid-template-columns: auto !important;
+    gap: 20px !important;
+  }
+  .card-para {
+    width: auto !important;
+  }
+  .card-info {
+    padding: 30px 25px !important;
+  }
+  .card-info,
+  .location-info {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
   h1 {
     font-size: 48px;
   }
@@ -746,7 +1131,29 @@ footer h3 {
   .footer-address {
     gap: 60px;
   }
+  .form-btn {
+    padding: 20px 50px;
+  }
+  .cloums-contact {
+    gap: 80px;
+  }
   .footer-query {
     gap: 100px;
+  }
+  .floating-card-product {
+    padding: 40px;
+    width: 900px;
+    bottom: -125px;
+  }
+  .problm-content p {
+    width: auto;
+    padding-right: 24px;
+  }
+  .photo-content {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+  .unique-card {
+    width: auto;
   }
 }/*# sourceMappingURL=style-scss.css.map */

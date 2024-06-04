@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Scroll from "../constant/Scroll";
 import { NavLink } from "react-router-dom";
 import Footer from "../component/Footer";
 import BannerSection from "../component/BannerSection";
@@ -56,7 +57,7 @@ const Blog = () => {
         </div>
       </header>
       <section className="marging mobile-space xl:!mt-28 !mt-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between lg:gap-16 gap-5">
+        <div className="flex flex-col lg:grid grid-cols-2 items-center justify-between lg:gap-8 gap-5">
           <img src={ImagePath.FITNESSWATCH} alt="fitness watch" />
           <div className="watch-contemt">
             <h3>Fitness tracking exceptional product experiences to life.</h3>
@@ -72,6 +73,7 @@ const Blog = () => {
               consequat.
             </p>
             <NavLink
+              onClick={Scroll}
               to="/Blog-details"
               className="header-btn inline-block blog-btn"
             >
@@ -82,7 +84,7 @@ const Blog = () => {
         </div>
       </section>
       <section className="marging !mt-20 mobile-space">
-        <div className="grid xl:grid-cols-3 grid-cols-1 justify-evenly gap-6">
+        <div className="grid xl:grid-cols-3 grid-cols-1 md:grid-cols-2  justify-evenly gap-6">
           {records.map((d) => {
             return (
               <div key={d.id} className="h-full">

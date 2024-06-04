@@ -7,7 +7,9 @@ const PaginationData = [
   // frist page data
   {
     id: intNum,
-    image: <img src={ImagePath.CARPARKING} alt="product image " />,
+    image: (
+      <img src={ImagePath.CARPARKING} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Car Parking Sensor product exercitation labor consequat..</h3>
@@ -32,7 +34,13 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FITNESSWATCH} alt="product image " />,
+    image: (
+      <img
+        src={ImagePath.FITNESSWATCH}
+        alt="product image "
+        className="w-full"
+      />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Fitness tracking exceptional product experiences to life.</h3>
@@ -57,7 +65,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FARMASY} alt="product image " />,
+    image: (
+      <img src={ImagePath.FARMASY} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Dairy Farming Digital Device product experiences to life.</h3>
@@ -82,7 +92,13 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FITNESSWATCH} alt="product image " />,
+    image: (
+      <img
+        src={ImagePath.FITNESSWATCH}
+        alt="product image "
+        className="w-full"
+      />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Fitness tracking exceptional product experiences to life.</h3>
@@ -108,7 +124,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.CARPARKING} alt="product image " />,
+    image: (
+      <img src={ImagePath.CARPARKING} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Car Parking Sensor product exercitation labor consequat..</h3>
@@ -133,7 +151,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FARMASY} alt="product image " />,
+    image: (
+      <img src={ImagePath.FARMASY} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Dairy Farming Digital Device product experiences to life.</h3>
@@ -158,7 +178,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.CARPARKING} alt="product image " />,
+    image: (
+      <img src={ImagePath.CARPARKING} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Car Parking Sensor product exercitation labor consequat..</h3>
@@ -183,7 +205,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FARMASY} alt="product image " />,
+    image: (
+      <img src={ImagePath.FARMASY} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Dairy Farming Digital Device product experiences to life.</h3>
@@ -209,7 +233,9 @@ const PaginationData = [
   // second page data
   {
     id: ++intNum,
-    image: <img src={ImagePath.CARPARKING} alt="product image " />,
+    image: (
+      <img src={ImagePath.CARPARKING} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Car Parking Sensor product exercitation labor consequat..</h3>
@@ -234,7 +260,13 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FITNESSWATCH} alt="product image " />,
+    image: (
+      <img
+        src={ImagePath.FITNESSWATCH}
+        alt="product image "
+        className="w-full"
+      />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Fitness tracking exceptional product experiences to life.</h3>
@@ -259,7 +291,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FARMASY} alt="product image " />,
+    image: (
+      <img src={ImagePath.FARMASY} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Dairy Farming Digital Device product experiences to life.</h3>
@@ -284,7 +318,13 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FITNESSWATCH} alt="product image " />,
+    image: (
+      <img
+        src={ImagePath.FITNESSWATCH}
+        alt="product image "
+        className="w-full"
+      />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Fitness tracking exceptional product experiences to life.</h3>
@@ -310,7 +350,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.CARPARKING} alt="product image " />,
+    image: (
+      <img src={ImagePath.CARPARKING} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Car Parking Sensor product exercitation labor consequat..</h3>
@@ -335,7 +377,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FARMASY} alt="product image " />,
+    image: (
+      <img src={ImagePath.FARMASY} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Dairy Farming Digital Device product experiences to life.</h3>
@@ -360,7 +404,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.CARPARKING} alt="product image " />,
+    image: (
+      <img src={ImagePath.CARPARKING} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Car Parking Sensor product exercitation labor consequat..</h3>
@@ -385,7 +431,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FARMASY} alt="product image " />,
+    image: (
+      <img src={ImagePath.FARMASY} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Dairy Farming Digital Device product experiences to life.</h3>
@@ -411,7 +459,9 @@ const PaginationData = [
   // thrid page data
   {
     id: ++intNum,
-    image: <img src={ImagePath.CARPARKING} alt="product image " />,
+    image: (
+      <img src={ImagePath.CARPARKING} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Car Parking Sensor product exercitation labor consequat..</h3>
@@ -436,7 +486,13 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FITNESSWATCH} alt="product image " />,
+    image: (
+      <img
+        src={ImagePath.FITNESSWATCH}
+        alt="product image "
+        className="w-full"
+      />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Fitness tracking exceptional product experiences to life.</h3>
@@ -461,7 +517,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FARMASY} alt="product image " />,
+    image: (
+      <img src={ImagePath.FARMASY} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Dairy Farming Digital Device product experiences to life.</h3>
@@ -486,7 +544,13 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FITNESSWATCH} alt="product image " />,
+    image: (
+      <img
+        src={ImagePath.FITNESSWATCH}
+        alt="product image "
+        className="w-full"
+      />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Fitness tracking exceptional product experiences to life.</h3>
@@ -512,7 +576,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.CARPARKING} alt="product image " />,
+    image: (
+      <img src={ImagePath.CARPARKING} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Car Parking Sensor product exercitation labor consequat..</h3>
@@ -537,7 +603,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FARMASY} alt="product image " />,
+    image: (
+      <img src={ImagePath.FARMASY} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Dairy Farming Digital Device product experiences to life.</h3>
@@ -562,7 +630,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.CARPARKING} alt="product image " />,
+    image: (
+      <img src={ImagePath.CARPARKING} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Car Parking Sensor product exercitation labor consequat..</h3>
@@ -587,7 +657,9 @@ const PaginationData = [
   },
   {
     id: ++intNum,
-    image: <img src={ImagePath.FARMASY} alt="product image " />,
+    image: (
+      <img src={ImagePath.FARMASY} alt="product image " className="w-full" />
+    ),
     data: (
       <div className="watch-contemt paginationData">
         <h3>Dairy Farming Digital Device product experiences to life.</h3>

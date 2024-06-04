@@ -6,11 +6,15 @@ const ProblemCards = ({
   imageShow,
 }) => {
   return (
-    <div className="flex items-center problem-gap">
-      <img src={problemImage} alt="problem image" className={`${imageShow}`} />
-      <div>
+    <div className="flex flex-col lg:flex-row items-center problem-gap">
+      <img
+        src={problemImage}
+        alt="problem image"
+        className={`${imageShow} w-full lg:w-auto`}
+      />
+      <div className="mobile-card">
         <h2>{problemTitle}</h2>
-        <p className="mt-5">{problemDetails}</p>
+        <p className="md:mt-5 mt-2.5">{problemDetails}</p>
       </div>
     </div>
   );

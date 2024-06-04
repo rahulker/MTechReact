@@ -1,6 +1,6 @@
 @import "./variable";
 .blog-btn {
-  font-family: "Roboto";
+  font-family: $font-gobal;
 }
 
 .paginationData {
@@ -51,7 +51,7 @@
 
 .form-btn {
   padding: 30px 50px;
-  font-family: "Roboto";
+  font-family: $font-gobal;
 }
 
 .angle-position {
@@ -89,11 +89,11 @@
   h3 {
     font-size: 24px;
     line-height: 40px;
-    font-family: "Roboto";
+    font-family: $font-gobal;
   }
   h2 {
     font-size: 34px;
-    font-family: "Roboto";
+    font-family: $font-gobal;
     line-height: 40px;
   }
 }
@@ -140,12 +140,12 @@
   h2 {
     font-size: 34px;
     line-height: 46px;
-    font-family: "Roboto" !important;
+    font-family: $font-gobal !important;
   }
   h3 {
     font-size: 24px;
     line-height: 32px;
-    font-family: "Roboto" !important;
+    font-family: $font-gobal !important;
   }
   p {
     font-size: 18px;
@@ -172,10 +172,7 @@
   h2 {
     font-size: 24px;
     line-height: 22px;
-    font-family: "Roboto";
-  }
-  p {
-    width: 90% !important;
+    font-family: $font-gobal;
   }
 }
 
@@ -206,7 +203,7 @@
   h2 {
     font-size: 34px;
     line-height: 130%;
-    font-family: "Roboto";
+    font-family: $font-gobal;
   }
 }
 
@@ -218,7 +215,7 @@
   }
 
   h3 {
-    font-family: "Roboto";
+    font-family: $font-gobal;
     font-size: 24px;
     line-height: 22px;
   }
@@ -242,6 +239,84 @@
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
+  .blog-data,
+  .blog-details,
+  .blog-heading {
+    width: auto;
+  }
+  .unique-card {
+    width: auto;
+    height: 100%;
+  }
+  .problm-content {
+    p {
+      width: auto !important;
+    }
+  }
+  .problem-gap {
+    gap: 30px;
+  }
+  .mobile-card {
+    padding: 0 30px 30px;
+  }
+  .floating-card-product {
+    width: auto;
+    padding: 20px 30px;
+    h2 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    .icon-grid {
+      grid-template-columns: auto auto;
+    }
+  }
+  .product-heading {
+    h2,
+    p {
+      width: auto;
+    }
+    h2 {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+  .form-btn {
+    padding: 20px 40px !important;
+  }
+  .cloums-contact {
+    grid-template-columns: auto !important;
+    gap: 40px !important;
+  }
+  .input-container {
+    grid-template-columns: auto !important;
+  }
+  .card-para {
+    width: auto !important;
+  }
+  .card-info {
+    padding: 25px 18px !important;
+  }
+  .card-info,
+  .location-info {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  .blog-heading {
+    h1 {
+      font-size: 52px;
+      line-height: 62px;
+    }
+  }
+  .blog-data,
+  .blog-details {
+    p {
+      margin-top: 20px;
+    }
+    li {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
   .mobile-space {
     margin: auto 20px;
   }
@@ -278,9 +353,98 @@
   .footer-address {
     gap: 40px;
   }
+  .problems {
+    padding: 40px 0;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .unique-card {
+    width: auto;
+    height: 100%;
+  }
+  .problm-content {
+    p {
+      width: auto !important;
+    }
+  }
+  .problem-gap {
+    gap: 40px !important;
+  }
+  .mobile-card {
+    padding-right: 20px;
+    p {
+      font-size: 16px !important;
+    }
+  }
+  .trageted-customer {
+    p {
+      font-size: 14px !important;
+      line-height: 24px !important;
+    }
+  }
+  .banner {
+    padding: 60px 0;
+  }
+  .hardware-content {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+  .content-floating {
+    bottom: 10px;
+  }
+  .car-device-detail {
+    h2 {
+      font-size: 30px;
+      line-height: 42px;
+    }
+  }
+  .Hardware-title {
+    padding: 10px;
+  }
+  .problems {
+    padding: 50px 0 !important;
+  }
+  .blog-data,
+  .blog-details,
+  .blog-heading {
+    width: auto;
+  }
+  .floating-card-product {
+    padding: 30px 20px;
+    width: 640px;
+    right: 8px;
+    bottom: -120px;
+  }
+  .reveverse-position {
+    left: 8px;
+  }
+  .icon-grid {
+    grid-template-columns: auto auto;
+  }
+  .form-btn {
+    padding: 20px 40px !important;
+  }
+  .cloums-contact {
+    grid-template-columns: auto auto !important;
+    gap: 40px !important;
+  }
+  .input-container {
+    grid-template-columns: auto !important;
+    gap: 20px !important;
+  }
+  .card-para {
+    width: auto !important;
+  }
+  .card-info {
+    padding: 30px 25px !important;
+  }
+  .card-info,
+  .location-info {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
   h1 {
     font-size: 48px;
   }
@@ -326,7 +490,31 @@
   .footer-address {
     gap: 60px;
   }
+  .form-btn {
+    padding: 20px 50px;
+  }
+  .cloums-contact {
+    gap: 80px;
+  }
   .footer-query {
     gap: 100px;
+  }
+  .floating-card-product {
+    padding: 40px;
+    width: 900px;
+    bottom: -125px;
+  }
+  .problm-content {
+    p {
+      width: auto;
+      padding-right: 24px;
+    }
+  }
+  .photo-content {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+  .unique-card {
+    width: auto;
   }
 }

@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Scroll from "../constant/Scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import ImagePath from "../constant/ImagePath";
@@ -27,6 +28,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                onClick={Scroll}
                 to="/"
               >
                 Home
@@ -39,6 +41,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                onClick={Scroll}
                 to="/product"
               >
                 Product
@@ -51,6 +54,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                onClick={Scroll}
                 to="/about-us"
               >
                 About us
@@ -63,6 +67,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                onClick={Scroll}
                 to="/blog"
               >
                 Blog
@@ -75,6 +80,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                onClick={Scroll}
                 to="/contact-us"
               >
                 contact us
@@ -109,6 +115,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                onClick={Scroll}
                 to="/"
               >
                 Home
@@ -121,6 +128,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                onClick={Scroll}
                 to="/product"
               >
                 Product
@@ -133,6 +141,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                onClick={Scroll}
                 to="/about-us"
               >
                 About us
@@ -145,6 +154,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                onClick={Scroll}
                 to="/blog"
               >
                 Blog
@@ -157,6 +167,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                onClick={Scroll}
                 to="/contact-us"
               >
                 contact us
