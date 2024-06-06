@@ -1,4 +1,6 @@
 import { useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import ImagePath from "../constant/ImagePath";
 import { Swiper, SwiperSlide } from "swiper/react";
 import swiperCore from "swiper/core";
@@ -36,7 +38,7 @@ const SwiperContentSlide = ({ Content, Image }) => {
 function SwiperReview() {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
-  //   const paginationPart = useRef(null);
+  const paginationRef = useRef(null);
   return (
     <>
       <Swiper
@@ -48,11 +50,14 @@ function SwiperReview() {
           nextEl: navigationNextRef.current,
           prevEl: navigationPrevRef.current,
         }}
-        // pagination={paginationPart.current}
+        pagination={{
+          el: paginationRef,
+          type: "fraction",
+        }}
         onBeforeInit={(swiper) => {
           swiper.params.navigation.nextEl = navigationNextRef.current;
           swiper.params.navigation.prevEl = navigationPrevRef.current;
-          //   swiper.params.pagination = paginationPart.current;
+          swiper.params.pagination.el = paginationRef.current;
         }}
       >
         {/* 1 */}
@@ -110,7 +115,15 @@ function SwiperReview() {
           />
         </SwiperSlide>
       </Swiper>
-      <div className=""></div>
+      <div className="md:mt-4 mt-3 sm:mt-3.5 flex items-center gap-2.5">
+        <button ref={navigationPrevRef}>
+          <FontAwesomeIcon icon={faAngleLeft} />
+        </button>
+        <div ref={paginationRef} />
+        <button ref={navigationNextRef}>
+          <FontAwesomeIcon icon={faAngleRight} />
+        </button>
+      </div>
     </>
   );
 }

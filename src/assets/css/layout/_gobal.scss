@@ -5,6 +5,10 @@
   font-family: $font-gobal;
   padding: 0;
 }
+.counter-card {
+  padding: 0 116px;
+  border-color: #c6c6c6;
+}
 .problem-gap {
   p {
     p {
@@ -60,7 +64,7 @@ h6 {
   font-family: $font-gobal;
 }
 .marging {
-  margin: auto 312px;
+  margin: auto 280px;
   @media screen and (max-width: 1535px) {
     margin: auto;
   }
@@ -362,6 +366,18 @@ footer {
   }
 }
 @media screen and (max-width: 639px) {
+  header {
+    padding-top: 10px;
+  }
+  .counter-card {
+    padding: 30px 0;
+    h2 {
+      font-size: 30px !important;
+    }
+    p {
+      font-size: 16px !important;
+    }
+  }
   .unique-card {
     width: auto;
     height: auto;
@@ -522,6 +538,14 @@ footer {
       width: auto;
     }
   }
+  .product-details {
+    h1 {
+      width: auto !important;
+      font-size: 36px !important;
+      line-height: 50px !important;
+      padding-top: 70px !important;
+    }
+  }
   footer {
     .footer-query {
       gap: 40px;
@@ -568,6 +592,20 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .product-details {
+    h1 {
+      width: auto !important;
+    }
+  }
+  .counter-card {
+    padding: 30px 0;
+    h2 {
+      font-size: 30px !important;
+    }
+    p {
+      font-size: 16px !important;
+    }
+  }
   .header-title {
     margin-top: 68px;
   }
@@ -579,6 +617,9 @@ footer {
     p {
       width: auto !important;
     }
+  }
+  .counter-card {
+    padding: 20px 40px;
   }
   .problem-gap {
     gap: 40px !important;
@@ -658,6 +699,22 @@ footer {
     .footer-query,
     .footer-address {
       gap: 50px;
+    }
+  }
+  header {
+    padding-top: 10px;
+  }
+  .product-details {
+    h1 {
+      width: auto;
+    }
+  }
+  .product-details {
+    h1 {
+      width: auto !important;
+      font-size: 56px !important;
+      line-height: 68px !important;
+      padding-top: 84px !important;
     }
   }
 }

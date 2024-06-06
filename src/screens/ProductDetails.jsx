@@ -18,16 +18,16 @@ const ProductDetails = () => {
         <div className="nav-bg">
           <div className="marging">
             <Navbar />
-            {/* <div className="header-container ">
+            <div className="header-container ">
               <h1 className="text-white mt-80 mobile-space">
                 Welcome to the Future of Parking: Smart Parking System
               </h1>
-            </div> */}
+            </div>
           </div>
         </div>
       </header>
       <section className="marging mobile-space ">
-        <div className="flex lg:flex-row items-center  flex-col lg:mt-28 mt-10 justify-between lg:gap-5 xl:gap-10">
+        <div className="grid lg:grid-cols-2 items-center grid-cols-1 2xl:mt-28 lg:mt-20  mt-10 lg:justify-between justify-center lg:gap-5 xl:gap-10 gap-4 justify-items-center">
           {/* content */}
           <img
             src={ImagePath.DETAILPARKING}
@@ -59,7 +59,7 @@ const ProductDetails = () => {
           <img
             src={ImagePath.DETAILPARKING}
             alt="car parking device"
-            className="hidden lg:block lg:w-2/5"
+            className="hidden lg:block lg:w-2/5 xl:w-full"
           />
         </div>
       </section>

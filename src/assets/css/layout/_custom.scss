@@ -239,6 +239,23 @@
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
+  .product-details {
+    h1 {
+      width: auto !important;
+      font-size: 42px !important;
+      line-height: 58px !important;
+      padding-top: 80px !important;
+    }
+  }
+  .counter-card {
+    padding: 40px 0;
+    h2 {
+      font-size: 34px !important;
+    }
+    p {
+      font-size: 18px !important;
+    }
+  }
   .blog-data,
   .blog-details,
   .blog-heading {
@@ -356,9 +373,21 @@
   .problems {
     padding: 40px 0;
   }
+  header {
+    padding-top: 10px;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .counter-card {
+    padding: 0 87px;
+  }
+  .product-details {
+    h1 {
+      width: auto !important;
+      padding-top: 84px !important;
+    }
+  }
   .unique-card {
     width: auto;
     height: 100%;
@@ -516,5 +545,11 @@
   }
   .unique-card {
     width: auto;
+  }
+  .product-details {
+    h1 {
+      width: auto !important;
+      padding-top: 320px !important;
+    }
   }
 }

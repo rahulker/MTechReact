@@ -109,6 +109,7 @@ const ProductBanner = ({
                   className="header-btn banner-btn inline-block"
                   to="/product-details"
                   onClick={Scroll}
+                  title="View Product detail"
                 >
                   View More
                   <FontAwesomeIcon icon={faArrowRight} className="ml-1" />

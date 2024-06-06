@@ -17,7 +17,9 @@ const Navbar = () => {
       {/* desktop navbar */}
       <nav className="lg:flex items-center hidden mobile-space justify-between">
         <div>
-          <img src={ImagePath.LOGO} alt="company-logo" />
+          <NavLink to="/" onClick={Scroll}>
+            <img src={ImagePath.LOGO} alt="company-logo" title="ManekTach" />
+          </NavLink>
         </div>
         <div>
           <ul className="flex items-center link-gap">
@@ -28,6 +30,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                title="Home"
                 onClick={Scroll}
                 to="/"
               >
@@ -41,6 +44,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                title="Product"
                 onClick={Scroll}
                 to="/product"
               >
@@ -54,6 +58,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                title="About us"
                 onClick={Scroll}
                 to="/about-us"
               >
@@ -67,6 +72,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                title="Blog"
                 onClick={Scroll}
                 to="/blog"
               >
@@ -80,6 +86,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                title="Contact us"
                 onClick={Scroll}
                 to="/contact-us"
               >
@@ -92,7 +99,14 @@ const Navbar = () => {
       {/* mobile nav bar */}
       <nav className="flex lg:hidden  items-center fixed top-0 bg-black w-full justify-between ">
         <div className="flex items-center justify-between">
-          <img src={ImagePath.LOGO} alt="company-logo" className="w-3/4" />
+          <NavLink to="/" onClick={Scroll}>
+            <img
+              src={ImagePath.LOGO}
+              alt="company-logo"
+              className="w-3/4"
+              title="ManekTach"
+            />
+          </NavLink>
         </div>
         <div>
           <button
@@ -115,6 +129,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                title="Home"
                 onClick={Scroll}
                 to="/"
               >
@@ -128,6 +143,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                title="Product"
                 onClick={Scroll}
                 to="/product"
               >
@@ -141,6 +157,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                title="About us"
                 onClick={Scroll}
                 to="/about-us"
               >
@@ -154,6 +171,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                title="Blog"
                 onClick={Scroll}
                 to="/blog"
               >
@@ -167,6 +185,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
+                title="Contact us"
                 onClick={Scroll}
                 to="/contact-us"
               >

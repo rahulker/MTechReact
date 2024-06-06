@@ -4,7 +4,11 @@ const Meeting = () => {
   return (
     <div className="grid lg:grid-cols-2 grid-cols-1 items-center lg:mt-20 mt-5 meeting-container">
       <div>
-        <img src={ImagePath.MEETING} alt="meeting" className="mx-auto" />
+        <img
+          src={ImagePath.MEETING}
+          alt="meeting"
+          className="mx-auto lg:mx-0 xl:w-full"
+        />
       </div>
       <div className="meeting-content-container ">
         <h2>Who we are</h2>

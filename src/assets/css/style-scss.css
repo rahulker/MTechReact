@@ -21,6 +21,11 @@
   padding: 0;
 }
 
+.counter-card {
+  padding: 0 116px;
+  border-color: #c6c6c6;
+}
+
 .problem-gap p p {
   width: 90% !important;
 }
@@ -81,7 +86,7 @@ h6 {
 }
 
 .marging {
-  margin: auto 312px;
+  margin: auto 280px;
 }
 @media screen and (max-width: 1535px) {
   .marging {
@@ -398,6 +403,18 @@ footer h3 {
   }
 }
 @media screen and (max-width: 639px) {
+  header {
+    padding-top: 10px;
+  }
+  .counter-card {
+    padding: 30px 0;
+  }
+  .counter-card h2 {
+    font-size: 30px !important;
+  }
+  .counter-card p {
+    font-size: 16px !important;
+  }
   .unique-card {
     width: auto;
     height: auto;
@@ -552,6 +569,12 @@ footer h3 {
   .banner p {
     width: auto;
   }
+  .product-details h1 {
+    width: auto !important;
+    font-size: 36px !important;
+    line-height: 50px !important;
+    padding-top: 70px !important;
+  }
   footer .footer-query {
     gap: 40px;
   }
@@ -589,6 +612,18 @@ footer h3 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .product-details h1 {
+    width: auto !important;
+  }
+  .counter-card {
+    padding: 30px 0;
+  }
+  .counter-card h2 {
+    font-size: 30px !important;
+  }
+  .counter-card p {
+    font-size: 16px !important;
+  }
   .header-title {
     margin-top: 68px;
   }
@@ -598,6 +633,9 @@ footer h3 {
   }
   .problm-content p {
     width: auto !important;
+  }
+  .counter-card {
+    padding: 20px 40px;
   }
   .problem-gap {
     gap: 40px !important;
@@ -671,6 +709,18 @@ footer h3 {
   footer .footer-query,
   footer .footer-address {
     gap: 50px;
+  }
+  header {
+    padding-top: 10px;
+  }
+  .product-details h1 {
+    width: auto;
+  }
+  .product-details h1 {
+    width: auto !important;
+    font-size: 56px !important;
+    line-height: 68px !important;
+    padding-top: 84px !important;
   }
 }
 .blog-btn {
@@ -898,6 +948,21 @@ footer h3 {
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
+  .product-details h1 {
+    width: auto !important;
+    font-size: 42px !important;
+    line-height: 58px !important;
+    padding-top: 80px !important;
+  }
+  .counter-card {
+    padding: 40px 0;
+  }
+  .counter-card h2 {
+    font-size: 34px !important;
+  }
+  .counter-card p {
+    font-size: 18px !important;
+  }
   .blog-data,
   .blog-details,
   .blog-heading {
@@ -1006,8 +1071,18 @@ footer h3 {
   .problems {
     padding: 40px 0;
   }
+  header {
+    padding-top: 10px;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .counter-card {
+    padding: 0 87px;
+  }
+  .product-details h1 {
+    width: auto !important;
+    padding-top: 84px !important;
+  }
   .unique-card {
     width: auto;
     height: 100%;
@@ -1155,5 +1230,9 @@ footer h3 {
   }
   .unique-card {
     width: auto;
+  }
+  .product-details h1 {
+    width: auto !important;
+    padding-top: 320px !important;
   }
 }/*# sourceMappingURL=style-scss.css.map */

@@ -7,7 +7,9 @@ const Footer = () => {
       <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 marging mobile-space justify-between footer-query">
         {/* 1 */}
         <div className="xl:col-span-2 col-auto">
-          <img src={ImagePath.LOGO} alt="site logo" />
+          <NavLink to="/" onClick={Scroll}>
+            <img src={ImagePath.LOGO} alt="site logo" title="ManekTach" />
+          </NavLink>
           <p className="mt-5">
             Glide gives you the powers of a developer and a designer. Create
             remarkable tools to solve the business problems you thought you
@@ -24,22 +26,22 @@ const Footer = () => {
             <h3>Quick Links</h3>
             <ul className="flex md:flex-col lg:flex-row xl:flex-col items-start gap-4">
               <li>
-                <NavLink to="/" onClick={Scroll}>
+                <NavLink to="/" onClick={Scroll} title="Home">
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Product" onClick={Scroll}>
+                <NavLink to="/Product" onClick={Scroll} title="Product">
                   Product
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about-us" onClick={Scroll}>
+                <NavLink to="/about-us" onClick={Scroll} title="About us">
                   About Us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact-us" onClick={Scroll}>
+                <NavLink to="/contact-us" onClick={Scroll} title="Contact us">
                   Contact Us
                 </NavLink>
               </li>

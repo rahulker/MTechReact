@@ -3,12 +3,13 @@ import HeaderTitle from "../component/HeaderTitle";
 import Footer from "../component/Footer";
 import Meeting from "../component/Meeting";
 import TrustedCompany from "../component/TrustedCompany";
-// import React, { useState, useEffect } from "react";
+// import { useState } from "react";
 import SwiperReview from "../component/SwiperReview";
 import BannerSection from "../component/BannerSection";
 import Title from "../component/Title";
 import CardBox from "../component/CardBox";
 import ImagePath from "../constant/ImagePath";
+import CountUp from "react-countup";
 const AboutUs = () => {
   return (
     <>
@@ -30,13 +31,41 @@ const AboutUs = () => {
           </div>
         </div>
       </header>
+      <section className=" white-box lg:py-12 py-4">
+        <div className=" marging grid md:grid-cols-4 grid-cols-1 justify-center items-center">
+          <div className="counter-card md:border-r text-center md:text-left md:border-b-0 border-b border-solid frist-card">
+            <h2 className="box-heading">
+              <CountUp start={0} end={72} duration={2} delay={0.2} />k
+            </h2>
+            <p>Using Our Product</p>
+          </div>
+          <div className="counter-card md:border-r md:border-b-0 text-center md:text-left border-b border-solid ">
+            <h2 className="box-heading">
+              <CountUp start={0} end={68} duration={2} delay={0.2} />k
+            </h2>
+            <p className="capitalize">happy customer</p>
+          </div>
+          <div className="counter-card md:border-r md:border-b-0 text-center md:text-left border-b border-solid ">
+            <h2 className="box-heading">
+              <CountUp start={0} end={15} duration={2} delay={0.2} />
+            </h2>
+            <p className="capitalize">Year Experience</p>
+          </div>
+          <div className="counter-card text-center md:text-left">
+            <h2 className="box-heading">
+              <CountUp start={0} end={27} duration={2} delay={0.2} />
+            </h2>
+            <p className="capitalize">Awards Achievement</p>
+          </div>
+        </div>
+      </section>
       <section className="marging mobile-space">
         <Meeting />
       </section>
       <section className="marging lg:!mt-14 !mt-7 mobile-space text-center xl:text-left">
         <TrustedCompany Header="Trusted By" HiddenPara="hidden" />
       </section>
-      <section className="xl:pt-32 lg:pt-20 pt-8 marging mobile-space">
+      <section className="2xl:pt-32 xl:pt-24 lg:pt-20 pt-8 marging mobile-space">
         <Title
           headerContent="Industry Experience"
           paraContent="For over a decade, our team has tackled challenging projects across a wide variety of verticals. Here are just a few examples:"

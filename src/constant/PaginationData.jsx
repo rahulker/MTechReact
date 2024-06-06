@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Scroll from "./Scroll";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import ImagePath from "./ImagePath";
 import { NavLink } from "react-router-dom";
@@ -24,6 +25,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -55,6 +57,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -82,6 +85,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -114,6 +118,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -141,6 +146,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -168,6 +174,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -195,6 +202,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -222,6 +230,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -250,6 +259,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -281,6 +291,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -308,6 +319,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -340,6 +352,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -367,6 +380,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -394,6 +408,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -421,6 +436,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -448,6 +464,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -476,6 +493,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -507,6 +525,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -534,6 +553,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -566,6 +586,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -593,6 +614,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -620,6 +642,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -647,6 +670,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -674,6 +698,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
+          onClick={Scroll}
           className="header-btn inline-block blog-btn"
         >
           View More
