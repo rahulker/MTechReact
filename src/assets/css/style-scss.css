@@ -742,6 +742,7 @@ footer h3 {
 
 .pagination-pre {
   padding: 5px 30px;
+  transition: 0.2s ease-in-out;
 }
 
 .company-swiper {
