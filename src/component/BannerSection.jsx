@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Scroll from "../constant/Scroll";
+import ScrollToUp from "../constant/ScrollToUp";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 const BannerSection = () => {
@@ -13,7 +13,7 @@ const BannerSection = () => {
         </p>
         <NavLink
           to="/contact-us"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className={`header-btn inline-block banner-btn`}
         >
           Get Started

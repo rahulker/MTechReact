@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import Scroll from "../constant/Scroll";
+import ScrollToUp from "../constant/ScrollToUp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import HeaderTitle from "../component/HeaderTitle";
@@ -98,7 +98,7 @@ const Product = () => {
           <NavLink
             to="/product-details"
             className="header-btn"
-            onClick={Scroll}
+            onClick={ScrollToUp}
           >
             <FontAwesomeIcon icon={faCircle} fade className="mr-1" /> Load
             More...

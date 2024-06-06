@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Scroll from "../constant/Scroll";
+import ScrollToUp from "../constant/ScrollToUp";
 import { NavLink } from "react-router-dom";
 import Footer from "../component/Footer";
 import BannerSection from "../component/BannerSection";
@@ -73,7 +73,7 @@ const Blog = () => {
               consequat.
             </p>
             <NavLink
-              onClick={Scroll}
+              onClick={ScrollToUp}
               to="/Blog-details"
               className="header-btn inline-block blog-btn"
             >

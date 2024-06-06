@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Scroll from "../constant/Scroll";
+import ScrollToUp from "../constant/ScrollToUp";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +12,7 @@ const HeaderTitle = ({ h1Title, headingPara, ButtonText, buttonShow }) => {
         <p>{headingPara}</p>
         <NavLink
           to="/contact-us"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           title="Contact us"
           className={`header-btn ${buttonShow} inline-block`}
         >

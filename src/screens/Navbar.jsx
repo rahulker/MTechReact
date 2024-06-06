@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import Scroll from "../constant/Scroll";
+import ScrollToUp from "../constant/ScrollToUp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import ImagePath from "../constant/ImagePath";
@@ -17,7 +17,7 @@ const Navbar = () => {
       {/* desktop navbar */}
       <nav className="lg:flex items-center hidden mobile-space justify-between">
         <div>
-          <NavLink to="/" onClick={Scroll}>
+          <NavLink to="/" onClick={ScrollToUp}>
             <img src={ImagePath.LOGO} alt="company-logo" title="ManekTach" />
           </NavLink>
         </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
                 title="Home"
-                onClick={Scroll}
+                onClick={ScrollToUp}
                 to="/"
               >
                 Home
@@ -45,7 +45,7 @@ const Navbar = () => {
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
                 title="Product"
-                onClick={Scroll}
+                onClick={ScrollToUp}
                 to="/product"
               >
                 Product
@@ -59,7 +59,7 @@ const Navbar = () => {
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
                 title="About us"
-                onClick={Scroll}
+                onClick={ScrollToUp}
                 to="/about-us"
               >
                 About us
@@ -73,7 +73,7 @@ const Navbar = () => {
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
                 title="Blog"
-                onClick={Scroll}
+                onClick={ScrollToUp}
                 to="/blog"
               >
                 Blog
@@ -87,7 +87,7 @@ const Navbar = () => {
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
                 title="Contact us"
-                onClick={Scroll}
+                onClick={ScrollToUp}
                 to="/contact-us"
               >
                 contact us
@@ -99,7 +99,7 @@ const Navbar = () => {
       {/* mobile nav bar */}
       <nav className="flex lg:hidden  items-center fixed top-0 bg-black w-full justify-between ">
         <div className="flex items-center justify-between">
-          <NavLink to="/" onClick={Scroll}>
+          <NavLink to="/" onClick={ScrollToUp}>
             <img
               src={ImagePath.LOGO}
               alt="company-logo"
@@ -130,7 +130,7 @@ const Navbar = () => {
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
                 title="Home"
-                onClick={Scroll}
+                onClick={ScrollToUp}
                 to="/"
               >
                 Home
@@ -144,7 +144,7 @@ const Navbar = () => {
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
                 title="Product"
-                onClick={Scroll}
+                onClick={ScrollToUp}
                 to="/product"
               >
                 Product
@@ -158,7 +158,7 @@ const Navbar = () => {
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
                 title="About us"
-                onClick={Scroll}
+                onClick={ScrollToUp}
                 to="/about-us"
               >
                 About us
@@ -172,7 +172,7 @@ const Navbar = () => {
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
                 title="Blog"
-                onClick={Scroll}
+                onClick={ScrollToUp}
                 to="/blog"
               >
                 Blog
@@ -186,7 +186,7 @@ const Navbar = () => {
                     : "opacity-50 text-white hover:opacity-100 transition-all"
                 }
                 title="Contact us"
-                onClick={Scroll}
+                onClick={ScrollToUp}
                 to="/contact-us"
               >
                 contact us

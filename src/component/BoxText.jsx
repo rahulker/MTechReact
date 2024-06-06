@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 const BoxText = ({ boxTextData }) => {
   return (
     <div className="box-text-container  text-white">
-      <li className="list-none">{boxTextData}</li>
+      <li className="list-none black-list">{boxTextData}</li>
     </div>
   );
 };

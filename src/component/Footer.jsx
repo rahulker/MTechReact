@@ -1,13 +1,13 @@
 import ImagePath from "../constant/ImagePath";
 import { NavLink } from "react-router-dom";
-import Scroll from "../constant/Scroll";
+import ScrollToUp from "../constant/ScrollToUp";
 const Footer = () => {
   return (
     <footer className="lg:my-20 my-5">
       <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 marging mobile-space justify-between footer-query">
         {/* 1 */}
         <div className="xl:col-span-2 col-auto">
-          <NavLink to="/" onClick={Scroll}>
+          <NavLink to="/" onClick={ScrollToUp}>
             <img src={ImagePath.LOGO} alt="site logo" title="ManekTach" />
           </NavLink>
           <p className="mt-5">
@@ -26,22 +26,26 @@ const Footer = () => {
             <h3>Quick Links</h3>
             <ul className="flex md:flex-col lg:flex-row xl:flex-col items-start gap-4">
               <li>
-                <NavLink to="/" onClick={Scroll} title="Home">
+                <NavLink to="/" onClick={ScrollToUp} title="Home">
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Product" onClick={Scroll} title="Product">
+                <NavLink to="/Product" onClick={ScrollToUp} title="Product">
                   Product
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about-us" onClick={Scroll} title="About us">
+                <NavLink to="/about-us" onClick={ScrollToUp} title="About us">
                   About Us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact-us" onClick={Scroll} title="Contact us">
+                <NavLink
+                  to="/contact-us"
+                  onClick={ScrollToUp}
+                  title="Contact us"
+                >
                   Contact Us
                 </NavLink>
               </li>

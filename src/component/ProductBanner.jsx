@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Scroll from "../constant/Scroll";
+import ScrollToUp from "../constant/ScrollToUp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
@@ -59,7 +59,7 @@ const ProductBanner = ({
               <div>
                 <NavLink
                   className="header-btn inline-block"
-                  onClick={Scroll}
+                  onClick={ScrollToUp}
                   to="/product-details"
                 >
                   View More
@@ -108,7 +108,7 @@ const ProductBanner = ({
                 <NavLink
                   className="header-btn banner-btn inline-block"
                   to="/product-details"
-                  onClick={Scroll}
+                  onClick={ScrollToUp}
                   title="View Product detail"
                 >
                   View More
@@ -159,7 +159,7 @@ const ProductBanner = ({
               <NavLink
                 className="header-btn banner-btn inline-block"
                 to="/product-details"
-                onClick={Scroll}
+                onClick={ScrollToUp}
               >
                 View More
                 <FontAwesomeIcon icon={faArrowRight} className="ml-1" />

@@ -10,7 +10,7 @@ import MoreProduct from "../component/moreProduct";
 import CustomerTarget from "../component/CustomerTarget";
 import ProblemCards from "../component/ProblemCards";
 import { NavLink } from "react-router-dom";
-import Scroll from "../constant/Scroll";
+import ScrollToUp from "../constant/ScrollToUp";
 const ProductDetails = () => {
   return (
     <>
@@ -59,7 +59,7 @@ const ProductDetails = () => {
           <img
             src={ImagePath.DETAILPARKING}
             alt="car parking device"
-            className="hidden lg:block lg:w-2/5 xl:w-full"
+            className="hidden lg:block xl:w-full"
           />
         </div>
       </section>
@@ -242,7 +242,7 @@ const ProductDetails = () => {
           <NavLink
             className="header-btn flex items-center gap-2.5 !bg-white w-fit"
             to="/contact-us"
-            onClick={Scroll}
+            onClick={ScrollToUp}
           >
             Connect Now
             <FontAwesomeIcon icon={faArrowRight} />

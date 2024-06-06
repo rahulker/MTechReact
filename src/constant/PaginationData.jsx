@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Scroll from "./Scroll";
+import ScrollToUp from "./ScrollToUp";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import ImagePath from "./ImagePath";
 import { NavLink } from "react-router-dom";
@@ -25,7 +25,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -57,7 +57,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -85,7 +85,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -118,7 +118,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -146,7 +146,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -174,7 +174,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -202,7 +202,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -230,7 +230,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -259,7 +259,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -291,7 +291,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -319,7 +319,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -352,7 +352,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -380,7 +380,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -408,7 +408,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -436,7 +436,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -464,7 +464,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -493,7 +493,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -525,7 +525,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -553,7 +553,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -586,7 +586,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -614,7 +614,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -642,7 +642,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -670,7 +670,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More
@@ -698,7 +698,7 @@ const PaginationData = [
         </p>
         <NavLink
           to="/Blog-details"
-          onClick={Scroll}
+          onClick={ScrollToUp}
           className="header-btn inline-block blog-btn"
         >
           View More

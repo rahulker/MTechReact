@@ -239,6 +239,10 @@
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
+  .black-list {
+    font-size: 14px;
+    line-height: 22px;
+  }
   .product-details {
     h1 {
       width: auto !important;
