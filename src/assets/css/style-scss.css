@@ -49,7 +49,7 @@ h6 {
   width: 1920px;
   margin: auto;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1535px) {
   .container-div {
     width: auto;
   }
@@ -403,6 +403,9 @@ footer h3 {
   }
 }
 @media screen and (max-width: 639px) {
+  .custom-para-card p {
+    margin-top: 12px !important;
+  }
   .black-list {
     font-size: 12px;
     line-height: 20px;
@@ -730,6 +733,9 @@ footer h3 {
     line-height: 68px !important;
     padding-top: 84px !important;
   }
+  .custom-para-card p {
+    margin-top: 20px !important;
+  }
 }
 .blog-btn {
   font-family: "Roboto";
@@ -925,8 +931,21 @@ footer h3 {
   font-family: "Roboto";
 }
 
+.custom-para-card {
+  height: 100%;
+}
+.custom-para-card p {
+  margin-top: 30px;
+}
+
+.new-para-problem {
+  width: auto !important;
+  padding-right: 20px;
+}
+
 .trageted-customer {
   padding: 40px 19px 40px 40px;
+  height: 100%;
 }
 .trageted-customer p {
   font-size: 18px;
@@ -957,6 +976,9 @@ footer h3 {
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
+  .custom-para-card p {
+    margin-top: 20px !important;
+  }
   .black-list {
     font-size: 14px;
     line-height: 22px;
@@ -1126,6 +1148,9 @@ footer h3 {
   .content-floating {
     bottom: 10px;
   }
+  .custom-para-card p {
+    margin-top: 22px !important;
+  }
   .car-device-detail h2 {
     font-size: 30px;
     line-height: 42px;
@@ -1208,7 +1233,7 @@ footer h3 {
 }
 @media screen and (min-width: 1280px) and (max-width: 1535px) {
   .mobile-space {
-    margin: auto 40px;
+    margin: auto 60px;
   }
   .content-slide {
     margin-top: 80px;
@@ -1238,8 +1263,11 @@ footer h3 {
     padding-right: 24px;
   }
   .photo-content {
-    font-size: 12px !important;
-    line-height: 20px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  .content-floating {
+    bottom: 25px;
   }
   .unique-card {
     width: auto;
@@ -1247,5 +1275,8 @@ footer h3 {
   .product-details h1 {
     width: auto !important;
     padding-top: 320px !important;
+  }
+  .custom-para-card p {
+    margin-top: 25px !important;
   }
 }/*# sourceMappingURL=style-scss.css.map */

@@ -26,8 +26,9 @@ const ProductDetails = () => {
           </div>
         </div>
       </header>
+      {/* smart parking */}
       <section className="marging mobile-space ">
-        <div className="grid lg:grid-cols-2 items-center grid-cols-1 2xl:mt-28 lg:mt-20  mt-10 lg:justify-between justify-center lg:gap-5 xl:gap-10 gap-4 justify-items-center">
+        <div className="flex lg:flex-row flex-col items-center 2xl:mt-28 lg:mt-20  mt-10 lg:justify-between justify-center lg:gap-5 xl:gap-10 gap-4 justify-items-center">
           {/* content */}
           <img
             src={ImagePath.DETAILPARKING}
@@ -130,16 +131,18 @@ const ProductDetails = () => {
               <p className="Hardware-title bg-white text-black rounded-sm mb-5 inline-block">
                 Hardware
               </p>
-              <p className="2xl:px-16 px-2.5 photo-content hardware-content">
-                Through diligent research and innovation, we have developed our
-                own hardware tailored to Indian conditions. Our meticulous
-                approach included testing the devices resilience by fully
-                submerging it in water, addressing waterlogging challenges
-                prevalent in certain streets. This comprehensive in-house
-                development has not only ensured a device perfectly suited for
-                local conditions but has also significantly slashed its cost by
-                half.
-              </p>
+              <div className="flex items-center">
+                <p className="2xl:px-16 px-2.5 photo-content hardware-content ">
+                  Through diligent research and innovation, we have developed
+                  our own hardware tailored to Indian conditions. Our meticulous
+                  approach included testing the devices resilience by fully
+                  submerging it in water, addressing waterlogging challenges
+                  prevalent in certain streets. This comprehensive in-house
+                  development has not only ensured a device perfectly suited for
+                  local conditions but has also significantly slashed its cost
+                  by half.
+                </p>
+              </div>
             </div>
           </div>
           <div className="relative">
@@ -152,7 +155,7 @@ const ProductDetails = () => {
               <p className="Hardware-title bg-white text-black rounded-sm mb-5 inline-block">
                 Software
               </p>
-              <p className="2xl:px-16 px-2.5 photo-content hardware-content">
+              <p className="2xl:px-16 px-2.5 photo-content hardware-content ">
                 Each parking slot will be categorized into zones and seamlessly
                 integrated into our mobile app. Users will have the convenience
                 of checking slot availability within a specific zone directly
@@ -165,7 +168,7 @@ const ProductDetails = () => {
         </div>
       </section>
       {/* cards */}
-      <section className="my-20 mobile-space">
+      <section className="mt-20 mobile-space">
         <div className="flex mt-10 flex-col items-center 2xl:flex-row gap-5">
           <div className="text-column ">
             <h2>Unique Selling Proposition</h2>
@@ -251,7 +254,7 @@ const ProductDetails = () => {
       </section>
       {/* how it works */}
       <section className="marging mobile-space">
-        <div className="xl:mt-32 lg:mt-20 mt-10 how-it-work">
+        <div className="2xl:mt-24 lg:mt-20 mt-10 how-it-work">
           <Title
             headingFont="box-heading"
             headerContent="How It Works"
@@ -265,7 +268,7 @@ const ProductDetails = () => {
           <img
             src={ImagePath.WORKFLOW}
             alt="how the hardware and software work"
-            className="mx-auto mt-16"
+            className="w-full mt-16"
           />
         </div>
       </section>
@@ -290,15 +293,17 @@ const ProductDetails = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col md:gap-6 gap-3 justify-between">
+          <div className="flex flex-col md:gap-6 gap-3 2xl:justify-between justify-evenly">
             <CustomerTarget
               headingTitle="Municipal Corporations"
               paraContent="The primary target is the local Municipal Corporation or city government looking to enhance revenue streams and optimize parking management without signiﬁcant capital investment. Your solution aligns with their goal of improving city infrastructure and ﬁnancial sustainability."
             />
-            <CustomerTarget
-              headingTitle="Smart City Initiatives"
-              paraContent="Municipalities aiming to participate in or fulﬁll their smart city initiatives are interested in innovative technologies that enhance urban living."
-            />
+            <div className="custom-para-card">
+              <CustomerTarget
+                headingTitle="Smart City Initiatives"
+                paraContent="Municipalities aiming to participate in or fulﬁll their smart city initiatives are interested in innovative technologies that enhance urban living."
+              />
+            </div>
             <CustomerTarget
               headingTitle="Any other Government Body"
               paraContent="Numerous government bodies and departments overseeing parking facilities at popular tourist destinations are beneﬁting from this innovative approach. By taking ownership of these parking spaces, these departments are unlocking additional revenue streams without incurring human resource costs."

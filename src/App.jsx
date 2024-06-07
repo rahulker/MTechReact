@@ -1,4 +1,3 @@
-// import React from "react";
 import BlogDetails from "./screens/BlogDetails";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./screens/Home";

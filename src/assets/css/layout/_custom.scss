@@ -207,9 +207,19 @@
     font-family: $font-gobal;
   }
 }
-
+.custom-para-card {
+  height: 100%;
+  p {
+    margin-top: 30px;
+  }
+}
+.new-para-problem {
+  width: auto !important;
+  padding-right: 20px;
+}
 .trageted-customer {
   padding: 40px 19px 40px 40px;
+  height: 100%;
   p {
     font-size: 18px;
     line-height: 28px;
@@ -240,6 +250,11 @@
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
+  .custom-para-card {
+    p {
+      margin-top: 20px !important;
+    }
+  }
   .black-list {
     font-size: 14px;
     line-height: 22px;
@@ -427,6 +442,11 @@
   .content-floating {
     bottom: 10px;
   }
+  .custom-para-card {
+    p {
+      margin-top: 22px !important;
+    }
+  }
   .car-device-detail {
     h2 {
       font-size: 30px;
@@ -513,7 +533,7 @@
 
 @media screen and (min-width: 1280px) and (max-width: 1535px) {
   .mobile-space {
-    margin: auto 40px;
+    margin: auto 60px;
   }
   .content-slide {
     margin-top: 80px;
@@ -545,8 +565,11 @@
     }
   }
   .photo-content {
-    font-size: 12px !important;
-    line-height: 20px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  .content-floating {
+    bottom: 25px;
   }
   .unique-card {
     width: auto;
@@ -555,6 +578,11 @@
     h1 {
       width: auto !important;
       padding-top: 320px !important;
+    }
+  }
+  .custom-para-card {
+    p {
+      margin-top: 25px !important;
     }
   }
 }

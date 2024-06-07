@@ -14,7 +14,7 @@ const ProblemCards = ({
       />
       <div className="mobile-card">
         <h2>{problemTitle}</h2>
-        <p className="md:mt-5 mt-2.5">{problemDetails}</p>
+        <p className="md:mt-5 mt-2.5 new-para-problem">{problemDetails}</p>
       </div>
     </div>
   );
