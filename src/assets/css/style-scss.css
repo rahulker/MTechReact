@@ -402,6 +402,11 @@ footer h3 {
     width: auto;
   }
 }
+.pagination-btn:hover {
+  color: #fff;
+  background: #000;
+}
+
 @media screen and (max-width: 639px) {
   .custom-para-card p {
     margin-top: 12px !important;

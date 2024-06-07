@@ -22,7 +22,6 @@ const Blog = () => {
   const records = PaginationData.slice(fristIndex, lastIndex);
   const pages = Math.ceil(PaginationData.length / recordPerView);
   const number = [...Array(pages + 1).keys()].slice(1);
-
   const nextpage = () => {
     if (currentPage < pages) {
       setCurrentPage(currentPage + 1);
@@ -98,8 +97,9 @@ const Blog = () => {
           <ul className="w-fit mx-auto flex ">
             <li className="border border-solid">
               <button
-                className="pagination-pre"
+                className="pagination-pre pagination-btn"
                 onClick={prepage}
+                id="pre"
                 disabled={currentPage === 1}
               >
                 <FontAwesomeIcon icon={faAnglesLeft} />
@@ -111,7 +111,7 @@ const Blog = () => {
                   key={i}
                   className={`${
                     currentPage === n ? "bg-black text-white" : ""
-                  } border border-solid`}
+                  } border border-solid pagination-btn`}
                 >
                   <button
                     className="pagination-pre"
@@ -124,7 +124,7 @@ const Blog = () => {
             })}
             <li className="border border-solid">
               <button
-                className="pagination-pre"
+                className="pagination-pre pagination-btn"
                 onClick={nextpage}
                 disabled={currentPage === pages}
               >

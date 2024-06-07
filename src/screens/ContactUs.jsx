@@ -63,11 +63,21 @@ const ContactUs = () => {
               <div className="mt-14">
                 <p>Follow us on:</p>
                 <div className="flex items-center gap-4">
-                  <FontAwesomeIcon icon={faSquareFacebook} />
-                  <FontAwesomeIcon icon={faSquareTwitter} />
-                  <FontAwesomeIcon icon={faLinkedin} />
-                  <FontAwesomeIcon icon={faSquareWhatsapp} />
-                  <FontAwesomeIcon icon={faYoutube} />
+                  <a href="https://www.facebook.com/">
+                    <FontAwesomeIcon icon={faSquareFacebook} />
+                  </a>
+                  <a href="https://www.x.com/">
+                    <FontAwesomeIcon icon={faSquareTwitter} />
+                  </a>
+                  <a href="https://www.linkedin.com/">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                  <a href="https://www.whatsapp.com/">
+                    <FontAwesomeIcon icon={faSquareWhatsapp} />
+                  </a>
+                  <a href="https://www.youtube.com/">
+                    <FontAwesomeIcon icon={faYoutube} />
+                  </a>
                 </div>
               </div>
             </div>
@@ -94,7 +104,7 @@ const ContactUs = () => {
                     value={selectValue}
                     id="Country"
                     onChange={(e) => setSelectValue(e.target.value)}
-                    className="input-field border border-solid mt-2 w-full border-black appearance-none "
+                    className="input-field border border-solid mt-2 w-full border-black appearance-none rounded-sm"
                   >
                     <option value="Select a Country">Select a Country</option>
                     <option value="India">India</option>
@@ -116,7 +126,7 @@ const ContactUs = () => {
                   <br />
                   <textarea
                     rows="5"
-                    className="input-field border border-solid border-black mt-2 w-full"
+                    className="input-field border border-solid border-black mt-2 w-full rounded-sm"
                   ></textarea>
                 </div>
                 <div className="mt-2">

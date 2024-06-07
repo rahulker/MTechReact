@@ -8,7 +8,7 @@ const InputFeild = ({ LabelInput, inputType }) => {
         type={inputType}
         id={LabelInput}
         name={LabelInput}
-        className="input-field border border-solid border-black mt-2 w-full"
+        className="input-field border border-solid border-black mt-2 w-full rounded-sm"
       />
     </>
   );

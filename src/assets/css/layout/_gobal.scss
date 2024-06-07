@@ -365,6 +365,12 @@ footer {
     }
   }
 }
+.pagination-btn {
+  &:hover {
+    color: #fff;
+    background: #000;
+  }
+}
 @media screen and (max-width: 639px) {
   .custom-para-card {
     p {
