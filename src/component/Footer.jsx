@@ -53,7 +53,7 @@ const Footer = () => {
                 <NavLink
                   to="/about-us"
                   onClick={ScrollToUp}
-                  className="hover:underlinetransition-transform "
+                  className="hover:underline transition-transform "
                   title="About us"
                 >
                   About Us
