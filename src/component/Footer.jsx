@@ -7,7 +7,11 @@ const Footer = () => {
       <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 marging mobile-space justify-between footer-query">
         {/* 1 */}
         <div className="xl:col-span-2 col-auto">
-          <NavLink to="/" onClick={ScrollToUp}>
+          <NavLink
+            to="/"
+            onClick={ScrollToUp}
+            className="hover:underline  transition-transform "
+          >
             <img src={ImagePath.LOGO} alt="site logo" title="ManekTach" />
           </NavLink>
           <p className="mt-5">
@@ -26,17 +30,32 @@ const Footer = () => {
             <h3>Quick Links</h3>
             <ul className="flex md:flex-col lg:flex-row xl:flex-col items-start gap-4">
               <li>
-                <NavLink to="/" onClick={ScrollToUp} title="Home">
+                <NavLink
+                  to="/"
+                  onClick={ScrollToUp}
+                  className="hover:underline transition-transform"
+                  title="Home"
+                >
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Product" onClick={ScrollToUp} title="Product">
+                <NavLink
+                  to="/Product"
+                  onClick={ScrollToUp}
+                  className="hover:underline transition-transform "
+                  title="Product"
+                >
                   Product
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about-us" onClick={ScrollToUp} title="About us">
+                <NavLink
+                  to="/about-us"
+                  onClick={ScrollToUp}
+                  className="hover:underlinetransition-transform "
+                  title="About us"
+                >
                   About Us
                 </NavLink>
               </li>
@@ -44,6 +63,7 @@ const Footer = () => {
                 <NavLink
                   to="/contact-us"
                   onClick={ScrollToUp}
+                  className="hover:underline transition-transform"
                   title="Contact us"
                 >
                   Contact Us
